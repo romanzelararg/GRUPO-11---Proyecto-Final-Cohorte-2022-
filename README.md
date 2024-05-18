@@ -16,7 +16,15 @@
 - [Lucero Carla](https://github.com/CarlaLucerocd)
 - [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
-  
+
+El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.
+
+Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial: 
+ * Leer datos georreferenciados
+ * Entrenar modelos
+ * Realizar predicciones
+ * Escribir predicciones en formatos georreferenciados.
+
 Modelo de Referencia CRISP-DM
 1-Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
 2-Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
