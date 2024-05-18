@@ -17,6 +17,7 @@
 - [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
 
+! [ImagenSatelital] 
 ## :pushpin: El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas
 
 ### :floppy_disk: *Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:*
