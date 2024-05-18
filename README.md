@@ -33,9 +33,9 @@
 
 ### :chart_with_upwards_trend: Este sistema podría implementarse por entidades recaudadoras para:
 
-- [x] * *Reducir la evasión fiscal***
-- [x] * *Aumentar la equidad tributaria***
-- [x] * *Optimizar recursos en la fiscalización**
+- [x] *Reducir la evasión fiscal*
+- [x] *Aumentar la equidad tributaria*
+- [x] *Optimizar recursos en la fiscalización*
 
 Modelo de Referencia CRISP-DM
 1. Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
