@@ -38,9 +38,15 @@
 - [x] *Optimizar recursos en la fiscalización*
 
 ### :black_nib: *Modelo de Referencia CRISP-DM*
-1. Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
-2. Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
-3. Preparación de los Datos.(Seleccion de tablas, registros y atributos, transformación y limpieza de datos).
-4. Modelado.(Selección y aplicación varias técnicas de modelado).
-5. Evaluación.(Evaluación del modelo y revisión de los pasos ejecutados).
-6. Despliegue(Generar un informe o implementar un proceso).
+1. Comprensión del Negocio
+   >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado
+3. Comprensión de los Datos
+   >Recopilación , primeros conocimientos de los datos
+5. Preparación de los Datos
+   >Seleccion de tablas, registros y atributos, transformación y limpieza de datos
+7. Modelado
+   >Selección y aplicación varias técnicas de modelado
+9. Evaluación
+   >Evaluación del modelo y revisión de los pasos ejecutados
+11. Despliegue
+    >Generar un informe o implementar un proceso
