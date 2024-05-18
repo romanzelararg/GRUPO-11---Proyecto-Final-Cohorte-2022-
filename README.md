@@ -15,6 +15,7 @@
 - [Lucero Carla](https://github.com/CarlaLucerocd)
 - [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
+  
 Modelo de Referencia CRISP-DM
 1-Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
 2-Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
