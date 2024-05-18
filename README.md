@@ -19,8 +19,7 @@
 
 ![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/img_SAS_wgs_r.jpg)
 
-### :pushpin: El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. 
-### :pushpin: Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.
+### :pushpin: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
 
 ### :floppy_disk: *Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:*
  * Leer datos georreferenciados
