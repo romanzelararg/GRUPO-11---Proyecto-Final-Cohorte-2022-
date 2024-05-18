@@ -17,30 +17,30 @@
 - [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
 
-El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.
+## El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas
 
-Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial: 
+### Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial: 
  * Leer datos georreferenciados
  * Entrenar modelos
  * Realizar predicciones
  * Escribir predicciones en formatos georreferenciados.
 
-Se propone desarrollar un sistema automatizado que use:
+### Se propone desarrollar un sistema automatizado que use:
 
-_Imágenes satelitales de alta resolución para identificar posibles piletas_
+:white_check_mark: _Imágenes satelitales de alta resolución para identificar posibles piletas_
 
-_Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes_
+:white_check_mark: _Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes_
 
-Este sistema podría implementarse por entidades recaudadoras para:
+### Este sistema podría implementarse por entidades recaudadoras para:
 
-***Reducir la evasión fiscal***
-***Aumentar la equidad tributaria***
-***Optimizar recursos en la fiscalización***
+- [x] * *Reducir la evasión fiscal***
+- [x] * *Aumentar la equidad tributaria***
+- [x] * *Optimizar recursos en la fiscalización**
 
 Modelo de Referencia CRISP-DM
-1-Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
-2-Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
-3-Preparación de los Datos.(Seleccion de tablas, registros y atributos, transformación y limpieza de datos).
-4-Modelado.(Selección y aplicación varias técnicas de modelado).
-5-Evaluación.(Evaluación del modelo y revisión de los pasos ejecutados).
-6-Despliegue(Generar un informe o implementar un proceso).
+1. Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
+2. Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
+3. Preparación de los Datos.(Seleccion de tablas, registros y atributos, transformación y limpieza de datos).
+4. Modelado.(Selección y aplicación varias técnicas de modelado).
+5. Evaluación.(Evaluación del modelo y revisión de los pasos ejecutados).
+6. Despliegue(Generar un informe o implementar un proceso).
