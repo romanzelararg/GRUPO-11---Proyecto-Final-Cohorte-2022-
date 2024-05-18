@@ -37,7 +37,7 @@
 - [x] *Aumentar la equidad tributaria*
 - [x] *Optimizar recursos en la fiscalización*
 
-Modelo de Referencia CRISP-DM
+### :black_nib: *Modelo de Referencia CRISP-DM*
 1. Comprensión del Negocio.(Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado).
 2. Comprensión de los Datos.(Recopilación , primeros conocimientos de los datos).
 3. Preparación de los Datos.(Seleccion de tablas, registros y atributos, transformación y limpieza de datos).
