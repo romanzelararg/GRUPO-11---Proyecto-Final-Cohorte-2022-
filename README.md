@@ -3,11 +3,11 @@
 <h1 align="center"> PROYECTO FINAL </h1>
 <h1 align="center"> Detección de piletas utilizando imágenes satelitales y Deep Learning </h1>
 
-#### COHORTE 2022
+### COHORTE 2022
 
-#### TECNICATURA EN CIENCIAS DE DATOS E INTELIGENCIA ARTIFICIAL
+### :globe_with_meridians: TECNICATURA EN CIENCIAS DE DATOS E INTELIGENCIA ARTIFICIAL
 
-**Colaboradores:**
+### *Colaboradores:*
 
 - [Hanun Romina](https://github.com/RomiHanun) 
 - [Kanneman Samuel](https://github.com/samuelkanneman)
@@ -17,7 +17,7 @@
 - [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
 
-## El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas
+## :pushpin: El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas
 
 ### :floppy_disk: *Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:*
  * Leer datos georreferenciados
