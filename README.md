@@ -21,27 +21,29 @@
 
 ### :pushpin: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
 
-### :floppy_disk: *Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:*
+# :black_nib: *Modelo de Referencia CRISP-DM*
+## 1. Comprensión del Negocio
+   >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado
+   
+   #### :floppy_disk: *Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:*
  * Leer datos georreferenciados
  * Entrenar modelos
  * Realizar predicciones
  * Escribir predicciones en formatos georreferenciados.
-
-### :computer: *Se propone desarrollar un sistema automatizado que use:*
-
+   
+#### :computer: *Se propone desarrollar un sistema automatizado que use:*
 :white_check_mark: _Imágenes satelitales de alta resolución para identificar posibles piletas_
 
-:white_check_mark: _Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes_
+:white_check_mark: _Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes_.
 
-### :chart_with_upwards_trend: *Este sistema podría implementarse por entidades recaudadoras para:*
-
+   #### :chart_with_upwards_trend: *Este sistema podría implementarse por entidades recaudadoras para:*
 - [x] *Reducir la evasión fiscal*
 - [x] *Aumentar la equidad tributaria*
-- [x] *Optimizar recursos en la fiscalización*
+- [x] *Optimizar recursos en la fiscalización*.
+      
 
-### :black_nib: *Modelo de Referencia CRISP-DM*
-1. Comprensión del Negocio
-   >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado
+
+
 3. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
 5. Preparación de los Datos
