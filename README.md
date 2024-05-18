@@ -1,7 +1,7 @@
 # GRUPO-11
 
 <h1 align="center"> PROYECTO FINAL </h1>
-<h1 align="center"> Detección de piletas utilizando imágenes satelitales y deep learning </h1>
+<h1 align="center"> Detección de piletas utilizando imágenes satelitales y Deep Learning </h1>
 
 #### COHORTE 2022
 
