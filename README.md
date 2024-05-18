@@ -26,10 +26,13 @@ Mediante el framework Raster Vision se propone realizar el procedimiento complet
  * Escribir predicciones en formatos georreferenciados.
 
 Se propone desarrollar un sistema automatizado que use:
+
 _Imágenes satelitales de alta resolución para identificar posibles piletas_
+
 _Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes_
 
 Este sistema podría implementarse por entidades recaudadoras para:
+
 ***Reducir la evasión fiscal***
 ***Aumentar la equidad tributaria***
 ***Optimizar recursos en la fiscalización***
