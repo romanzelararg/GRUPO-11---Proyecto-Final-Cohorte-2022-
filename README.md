@@ -41,16 +41,23 @@
 - [x] *Aumentar la equidad tributaria*
 - [x] *Optimizar recursos en la fiscalización*.
       
-
-
-
-3. Comprensión de los Datos
+## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
-5. Preparación de los Datos
+
+:white_check_mark: _Instalación de librerías de RasterVision_
+
+:white_check_mark: _Carga de imágenes satelitales en Drive_
+
+## 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos
-7. Modelado
+
+## 4. Modelado
    >Selección y aplicación varias técnicas de modelado
-9. Evaluación
+
+## 5. Evaluación
    >Evaluación del modelo y revisión de los pasos ejecutados
-11. Despliegue
+
+## 6. Despliegue
     >Generar un informe o implementar un proceso
+
+    
