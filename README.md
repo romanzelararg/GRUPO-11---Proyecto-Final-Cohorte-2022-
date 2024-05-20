@@ -14,7 +14,6 @@
 - [Zelarayán Román ](https://github.com/romanzelararg)
 - [Mansilla Leonardo Matias ](https://github.com/LMmansilla)
 - [Lucero Carla](https://github.com/CarlaLucerocd)
-- [Barea Silvana](https://github.com/recursosssbb)
 - [Juchniewicz Federico](https://github.com/FJISPC)
 
 ![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/img_SAS_wgs_r.jpg)
