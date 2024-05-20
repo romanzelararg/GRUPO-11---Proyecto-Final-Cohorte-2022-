@@ -43,7 +43,7 @@
 ## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
 
-:white_check_mark: _Instalación de librerías de RasterVision_
+:white_check_mark: _Instalación de librerías de RasterVision_Estos comandos instalaron diferentes módulos del proyecto "raster-vision", cada uno responsable de una parte especifica de la funcionalidad del sistema. Al ejecutar estos comandos , preparamos el entorno raster-vision , asegurandonos de que todos los componentes necesarios están instalados y configurados correctamente.
 
 :white_check_mark: _Carga de imágenes satelitales en Drive_
 
