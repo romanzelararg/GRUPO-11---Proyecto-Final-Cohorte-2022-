@@ -49,7 +49,8 @@
 Instalamos GDAL , la cual es una biblioteca de código abierto para leer y escribir datos geoespaciales en una variedadd de formatos.
 
 ## 3. Preparación de los Datos
-   >Seleccion de tablas, registros y atributos, transformación y limpieza de datos
+   >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
+>
 >Definimos la configuracion para la clasificación y el preprocesamineto de las imágenes , especificamente para segmentación y clasificación que incluyen "pileta" (piscina) y "background" (fondo).
 >_Definimos el tamaño en pixeles de los recortes cuadrados que se van a usar para entrenar el modelo y una serie de trasformaciones que ayudan a mejorar la robustez y generalización del modelo entrenandolo con variaciones de las imágenes originales.
 
