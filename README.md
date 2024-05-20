@@ -45,7 +45,7 @@
 
 :white_check_mark: _Instalación de librerías de RasterVision_Estos comandos instalaron diferentes módulos del proyecto "raster-vision", cada uno responsable de una parte especifica de la funcionalidad del sistema. Al ejecutar estos comandos , preparamos el entorno raster-vision , asegurandonos de que todos los componentes necesarios están instalados y configurados correctamente.
 
-:white_check_mark: _Carga de imágenes satelitales en Drive_
+:white_check_mark: _Carga de imágenes satelitales en Drive_Instalamos una herramienta de linea de comandos que facilita la descarga de archivos desde Google Drive. Este paquete es especialmente útil para descargar archivos grandes que se encuentran en Google DRive , como las imágenes que utilizaremos y queremos automatizar este proceso en scripts o notebooks
 
 ## 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos
