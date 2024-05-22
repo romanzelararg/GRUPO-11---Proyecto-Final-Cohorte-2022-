@@ -43,16 +43,17 @@
 ## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
 
-:white_check_mark: _Instalación de librerías de RasterVision_Estos comandos instalaron diferentes módulos del proyecto "raster-vision", cada uno responsable de una parte especifica de la funcionalidad del sistema. Al ejecutar estos comandos , preparamos el entorno raster-vision , asegurandonos de que todos los componentes necesarios están instalados y configurados correctamente.
+:white_check_mark: _Instalación de librerías de RasterVision_ Estos comandos instalaron diferentes módulos del proyecto "raster-vision", cada uno responsable de una parte especifica de la funcionalidad del sistema. Al ejecutar estos comandos , preparamos el entorno raster-vision , asegurandonos de que todos los componentes necesarios están instalados y configurados correctamente.
 
-:white_check_mark: _Carga de imágenes satelitales en Drive_Instalamos una herramienta de linea de comandos que facilita la descarga de archivos desde Google Drive. Este paquete es especialmente útil para descargar archivos grandes que se encuentran en Google DRive , como las imágenes que utilizaremos y queremos automatizar este proceso en scripts o notebooks.
+:white_check_mark: _Carga de imágenes satelitales en Drive_ Instalamos una herramienta de linea de comandos que facilita la descarga de archivos desde Google Drive. Este paquete es especialmente útil para descargar archivos grandes que se encuentran en Google DRive , como las imágenes que utilizaremos y queremos automatizar este proceso en scripts o notebooks.
 Instalamos GDAL , la cual es una biblioteca de código abierto para leer y escribir datos geoespaciales en una variedadd de formatos.
 
 ## 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
->
->Definimos la configuracion para la clasificación y el preprocesamineto de las imágenes , especificamente para segmentación y clasificación que incluyen "pileta" (piscina) y "background" (fondo).
->_Definimos el tamaño en pixeles de los recortes cuadrados que se van a usar para entrenar el modelo y una serie de trasformaciones que ayudan a mejorar la robustez y generalización del modelo entrenandolo con variaciones de las imágenes originales.
+
+:bookmark_tabs: Definimos la configuracion para la clasificación y el preprocesamineto de las imágenes , especificamente para segmentación y clasificación que incluyen "pileta" (piscina) y "background" (fondo).
+
+:bookmark_tabs: Definimos el tamaño en pixeles de los recortes cuadrados que se van a usar para entrenar el modelo y una serie de trasformaciones que ayudan a mejorar la robustez y generalización del modelo entrenandolo con variaciones de las imágenes originales.
 
 ## 4. Modelado
    >Selección y aplicación varias técnicas de modelado
