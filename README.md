@@ -18,10 +18,10 @@
 
 ![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/img_SAS_wgs_r.jpg)
 
-### :pushpin: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
+### :electron: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
 
-# :black_nib: *Modelo de Referencia CRISP-DM*
-## 1. Comprensión del Negocio
+## :black_nib: *Modelo de Referencia CRISP-DM*
+### 1. Comprensión del Negocio
    >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado.
 
  :pushpin: ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
@@ -81,20 +81,22 @@ Optimización de recursos: El sistema propuesto podría optimizar los recursos u
   
 * Cambios ambientales: Las condiciones ambientales y cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes satelitales, lo que podría complicar la detección.
       
-## 2. Comprensión de los Datos
+### 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
 
 Análisis exploratorio de las imágenes satelitales del área de interés. Implica visualizar las imágenes, entender su resolución y otros metadatos.
 
-* Exploración de herramientas de descarga: Descargas y evaluación de las imágenes.
+:rocket: ***Exploración de herramientas de descarga: Descargas y evaluación de las imágenes***
   
-* Descarga de imágenes satelitales para entrenamiento: Descarga de imágenes de zonas de interés mediante el Software SAS PLANET.
+:rocket: ***Descarga de imágenes satelitales para entrenamiento: Descarga de imágenes de zonas de interés mediante el Software SAS PLANET***
   
-* Instalación de librerías de RasterVision.
+:rocket: ***Instalación de librerías de RasterVision***
   
-* Carga de imágenes satelitales en Drive.
+:rocket: ***Carga de imágenes satelitales en Drive***
   
-* Identificar las fuentes de datos y proyecciones: Dataset de evidencia de campo (relevamiento de piscinas) obtenido de la página web del gobierno de la Ciudad de Buenos Aires (https://buenosaires.gob.ar/). El mismo consistió en:
+:rocket: ***Identificar las fuentes de datos y proyecciones: Dataset de evidencia de campo (relevamiento de piscinas) obtenido de la página web del gobierno de la Ciudad de Buenos Aires (https://buenosaires.gob.ar/).***
+
+El mismo consistió en:
 
   - [x] *Datos georreferenciados:* Estos datos, que pueden incluir información sobre la ubicación de las piscinas, se utilizan para entrenar el modelo y evaluar su rendimiento.
   - [x] *Datos de entrenamiento y validación:* Estos son subconjuntos de los datos georreferenciados que se utilizan específicamente para entrenar el modelo y evaluar su rendimiento durante el proceso de entrenamiento.
@@ -102,13 +104,14 @@ Análisis exploratorio de las imágenes satelitales del área de interés. Impli
 Si bien no se especifica exactamente de dónde se obtienen estos datos, en proyectos similares, las imágenes satelitales a menudo se obtienen de fuentes como Google Earth, Bing Maps, o servicios de imágenes satelitales como Sentinel o Landsat. Los datos georreferenciados pueden provenir de diversas fuentes, incluyendo bases de datos públicas o privadas, o pueden ser recopilados manualmente.
 
 
-* Realizar un análisis exploratorio de los datos.
+:rocket: ***Realizar un análisis exploratorio de los datos***
+
    - [x] Se descarga y se guarda un archivo .geojson (formato de archivo abierto para representar datos geoespaciales simples).
 Los archivos GeoJSON contienen información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON;
    - [x] Se configura las clases para la segmentación, se define el tamaño de las ventanas de entrenamiento y establece una serie de transformaciones de aumento de datos para mejorar la robustez del modelo de aprendizaje automático.
 Las transformaciones de aumento de datos son técnicas comunes para aumentar artificialmente la diversidad de los datos de entrenamiento sin recopilar nuevos datos, lo que puede mejorar la capacidad del modelo para generalizar a nuevas imágenes.
 
-* Identificar las características y la calidad de los datos.
+:rocket: ***Identificar las características y la calidad de los datos***
   
    Características del Proyecto:
    - [x] Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
@@ -132,7 +135,7 @@ Las transformaciones de aumento de datos son técnicas comunes para aumentar art
    - [x] Optimización de Hiperparámetros: Ajustar los hiperparámetros para mejorar el rendimiento del modelo.
    - [x] Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
 
-* Definir las clases para la segmentación.
+:rocket: ***Definir las clases para la segmentación***
 
 En el contexto de la segmentación semántica en deep learning, las "clases" se refieren a las categorías de objetos que el modelo está diseñado para reconocer en las imágenes. Cada píxel en la imagen se clasifica en una de las clases posibles.
 
@@ -143,12 +146,12 @@ En el colab ISPC_Piletas_Entrenamiento.ipynb`, las clases para la segmentación 
          
 Estas clases permiten al modelo aprender a distinguir entre las características visuales de las piscinas y el resto de la imagen. Una vez entrenado, el modelo puede aplicarse a nuevas imágenes para identificar y segmentar las piscinas.
 
-## 3. Preparación de los Datos
+### 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
 
-   :test_tube: Preparar los datos para el modelado implica la limpieza de las imágenes, la evaluación del dataset (evaluación visual de correspondencia de las anotaciones), la eliminación de las partes no deseadas y la preparación de las etiquetas para el entrenamiento del modelo.
+   Preparar los datos para el modelado implica la limpieza de las imágenes, la evaluación del dataset (evaluación visual de correspondencia de las anotaciones), la eliminación de las partes no deseadas y la preparación de las etiquetas para el entrenamiento del modelo.
 
-***Definición de nuestra área de interés***
+ :test_tube: ***Definición de nuestra área de interés***
 
 El Área de Interés (AoI) se refiere a la región geográfica específica que se está analizando o estudiando. En nuestro caso, está relacionada con la detección de piletas (piscinas) utilizando imágenes satelitales y técnicas de aprendizaje profundo.
 
@@ -156,7 +159,7 @@ El AoI se define mediante un archivo GeoJSON, que es un formato de archivo abier
 
 En resumen, el AoI es crucial para enfocar el análisis de datos geoespaciales en una región específica y es un componente esencial en proyectos de visión por computadora y teledetección que involucran datos georreferenciados.
 
-***Entrenamiento del modelo 'resnet18'***
+ :test_tube: ***Entrenamiento del modelo 'resnet18'***
 
 * Carga del Modelo Preentrenado:
    - [x] Se carga un modelo resnet18 preentrenado utilizando torch.hub.
@@ -166,7 +169,7 @@ En resumen, el AoI es crucial para enfocar el análisis de datos geoespaciales e
    - [x] Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
    - [x] Se realizan iteraciones (épocas) donde el modelo aprende a identificar piletas en las imágenes.
 
-***Generación de variable***
+ :test_tube: ***Generación de variable***
 
 En el caso del colab ISPC_Piletas_Entrenamiento.ipynb` , el código muestra la generación de dos variables:
 
@@ -176,19 +179,19 @@ En el caso del colab ISPC_Piletas_Entrenamiento.ipynb` , el código muestra la g
 
 Aquí, <sup>annotations_url</sup>  es una variable que almacena la URL del archivo que se desea descargar desde Google Drive, y <sup>annotations_file_dest</sup> es una variable que almacena la ruta donde se guardará el archivo descargado.
 
-***Preprocesar y Transformar los datos para su uso en el modelo*** 
+ :test_tube: ***Preprocesar y Transformar los datos para su uso en el modelo*** 
 
 Se comenzó a trabajar con una imagen que era bastante extensa de aproximadamente 40 manzanas, pero se hizo difícil poder entrenar el modelo.
 Por lo que se tomó la decisión de reducir la imagen a 4 manzanas y se logró entrenar correctamente.
 
 Con dicho entrenamiento se obtuvo un modelo y se utilizó para predecir otro.
 
-## 4. Modelado
+### 4. Modelado
    >Selección y aplicación de varias técnicas de modelado
 
 Generación del modelo deep learning y su entrenamiento utilizando el framework Raster Vision. Asegurandonos de configurar correctamente los parámetros del modelo y de utilizar una división adecuada de los datos para el entrenamiento y la validación.
 
-***Seleccionar el modelo de aprendizaje profundo (ResNet-18)***
+:pencil: ***Seleccionar el modelo de aprendizaje profundo (ResNet-18)***
 
 ResNet-18 es una arquitectura de red neuronal convolucional que ha demostrado ser muy efectiva en tareas de reconocimiento de imágenes.
 
@@ -198,7 +201,7 @@ En el contexto del colab ISPC_Piletas_Entrenamiento.ipynb, ResNet-18 ha sido sel
    - [ ] Rendimiento: A pesar de su simplicidad, ResNet-18 puede ofrecer un rendimiento sólido en muchas tareas de visión por computadora, incluyendo la detección y segmentación de objetos.
    - [ ] Preentrenamiento: ResNet-18 está disponible como un modelo preentrenado en varias bibliotecas de deep learning, lo que permite un inicio rápido y mejora el rendimiento al aprovechar los patrones aprendidos de grandes conjuntos de datos como ImageNet.
 
-***Configurar el modelo y los parámetros de entrenamiento***
+:pencil: ***Configurar el modelo y los parámetros de entrenamiento***
 
 * Selección del Modelo: Se ha seleccionado ResNet-18, que es una arquitectura de red neuronal convolucional conocida por su eficacia en tareas de reconocimiento de imágenes.
 
@@ -206,14 +209,14 @@ En el contexto del colab ISPC_Piletas_Entrenamiento.ipynb, ResNet-18 ha sido sel
 
 * Configuración de Parámetros de Entrenamiento: Los parámetros de entrenamiento, como el número de épocas, el tamaño del lote y la tasa de aprendizaje, se establecen. Estos parámetros pueden tener un gran impacto en la eficacia del entrenamiento.
 
-***Entrenar el modelo con los datos de entrenamiento***
+:pencil: ***Entrenar el modelo con los datos de entrenamiento***
 
 El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos y los parámetros internos de la red para minimizar el error.
 
    - [x] Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
    - [x] Se realizan iteraciones (epoch) donde el modelo aprende a identificar piletas en las imágenes.
 
-***Monitorear el rendimiento del modelo durante el entrenamiento***
+:pencil: ***Monitorear el rendimiento del modelo durante el entrenamiento***
 
 * Visualización: Se utiliza <sup>SemanticSegmentationVisualizer</sup> para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
 
@@ -222,10 +225,12 @@ El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos 
 * Guardado del Modelo: Una vez completado el entrenamiento, se guarda el modelo y su configuración para su uso futuro.
 
 
-## 5. Evaluación
+### 5. Evaluación
    >Evaluación del modelo y revisión de los pasos ejecutados
 
-## 6. Despliegue
-    >Generar un informe o implementar un proceso
+### 6. Despliegue
+    >Generar un informe o implementar un proceso.
+
+    
 
     
