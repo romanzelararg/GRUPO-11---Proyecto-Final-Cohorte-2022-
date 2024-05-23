@@ -24,25 +24,25 @@
 ## 1. Comprensión del Negocio
    >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado.
 
- ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
+ :pushpin: ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
 - [x] Leer datos georreferenciados
 - [x] Entrenar modelos
 - [x] Realizar predicciones
 - [x] Escribir predicciones en formatos georreferenciados.
 
- ***Desarrollar un sistema automatizado que use:***
+:pushpin: ***Desarrollar un sistema automatizado que use:***
 
 ✅ Imágenes satelitales de alta resolución para identificar posibles piletas
 
 ✅ Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes.
 
- ***Objetivo del sistema automatizado***
+:pushpin: ***Objetivo del sistema automatizado***
 
 El objetivo es que dicho sistema pueda identificar piscinas en imágenes satelitales de alta resolución. Éste sistema podría ser de gran utilidad para entidades recaudadoras de impuestos, ya que permitiría identificar propiedades con piscinas que no están declaradas, lo que podría ayudar a reducir la evasión fiscal y aumentar la equidad tributaria.
 
 Además, el sistema también podría ayudar a optimizar los recursos utilizados en la fiscalización, ya que permitiría identificar las propiedades que deben ser inspeccionadas de manera más eficiente.
 
-***Identificación de las partes interesadas y sus necesidades***
+:pushpin: ***Identificación de las partes interesadas y sus necesidades***
 
 *Partes interesadas:*
 
@@ -62,7 +62,7 @@ Además, el sistema también podría ayudar a optimizar los recursos utilizados 
   
 * Visualización y evaluación: Capacidad para visualizar los resultados de la segmentación semántica y evaluar la precisión del modelo.
   
-***Identificar los posibles beneficios y desafios del proyecto***
+:pushpin: ***Identificar los posibles beneficios y desafios del proyecto***
 
 Utilizar imágenes satelitales y técnicas de deep learning para detectar piscinas implica beneficios y desafíos:
 
