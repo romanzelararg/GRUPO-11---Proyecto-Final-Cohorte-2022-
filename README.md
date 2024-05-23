@@ -86,57 +86,55 @@ Optimización de recursos: El sistema propuesto podría optimizar los recursos u
 ## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
 
-Objetivo: Análisis exploratorio de las imágenes satelitales que tenemos disponibles.
 Análisis exploratorio de las imágenes satelitales del área de interés. Implica visualizar las imágenes, entender su resolución y otros metadatos.
 
-Exploración de herramientas de descarga.
-Descarga de imágenes satelitales para entrenamiento.
-Instalación de librerías de RasterVision
-Carga de imágenes satelitales en Drive
-Identificar las fuentes de datos y proyecciones
-Dataset de evidencia de campo (relevamiento de piscinas) fue obtenido de la página web del gobierno de la Ciudad de Buenos Aires. (https://buenosaires.gob.ar/). El mismo consistió en:
+* Exploración de herramientas de descarga: Descargas y evaluación de las imágenes.
+  
+* Descarga de imágenes satelitales para entrenamiento: Descarga de imágenes de zonas de interés mediante el Software SAS PLANET.
+  
+* Instalación de librerías de RasterVision.
+  
+* Carga de imágenes satelitales en Drive.
+  
+* Identificar las fuentes de datos y proyecciones: Dataset de evidencia de campo (relevamiento de piscinas) obtenido de la página web del gobierno de la Ciudad de Buenos Aires (https://buenosaires.gob.ar/). El mismo consistió en:
 
-‌
+  - [x] *Datos georreferenciados:* Estos datos, que pueden incluir información sobre la ubicación de las piscinas, se utilizan para entrenar el modelo y evaluar su rendimiento.
+  - [x] *Datos de entrenamiento y validación:* Estos son subconjuntos de los datos georreferenciados que se utilizan específicamente para entrenar el modelo y evaluar su rendimiento durante el proceso de entrenamiento.
 
-Datos georreferenciados: Estos datos, que pueden incluir información sobre la ubicación de las piscinas, se utilizan para entrenar el modelo y evaluar su rendimiento;
-Datos de entrenamiento y validación: Estos son subconjuntos de los datos georreferenciados que se utilizan específicamente para entrenar el modelo y evaluar su rendimiento durante el proceso de entrenamiento.
-Es importante mencionar que el cuaderno no especifica exactamente de dónde se obtienen estos datos. Sin embargo, en proyectos similares, las imágenes satelitales a menudo se obtienen de fuentes como Google Earth, Bing Maps, o servicios de imágenes satelitales como Sentinel o Landsat. Los datos georreferenciados pueden provenir de diversas fuentes, incluyendo bases de datos públicas o privadas, o pueden ser recopilados manualmente.
+Si bien no se especifica exactamente de dónde se obtienen estos datos, en proyectos similares, las imágenes satelitales a menudo se obtienen de fuentes como Google Earth, Bing Maps, o servicios de imágenes satelitales como Sentinel o Landsat. Los datos georreferenciados pueden provenir de diversas fuentes, incluyendo bases de datos públicas o privadas, o pueden ser recopilados manualmente.
 
 
-Realizar un análisis exploratorio de los datos.
-
-Se descarga y se guarda un archivo .geojson, que es un formato de archivo abierto para representar datos geoespaciales simples.
+* Realizar un análisis exploratorio de los datos.
+   - [x] Se descarga y se guarda un archivo .geojson (formato de archivo abierto para representar datos geoespaciales simples).
 Los archivos GeoJSON contienen información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON;
-Se configura las clases para la segmentación, se define el tamaño de las ventanas de entrenamiento y establece una serie de transformaciones de aumento de datos para mejorar la robustez del modelo de aprendizaje automático.
+   - [x] Se configura las clases para la segmentación, se define el tamaño de las ventanas de entrenamiento y establece una serie de transformaciones de aumento de datos para mejorar la robustez del modelo de aprendizaje automático.
 Las transformaciones de aumento de datos son técnicas comunes para aumentar artificialmente la diversidad de los datos de entrenamiento sin recopilar nuevos datos, lo que puede mejorar la capacidad del modelo para generalizar a nuevas imágenes.
 
+* Identificar las características y la calidad de los datos.
 
-Identificar las características y la calidad de los datos.
-
-Características y la calidad de los datos:
-
-Características del Proyecto:
-
-Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
-Framework Utilizado: Raster Vision, para el proceso completo de aprendizaje profundo geoespacial.
-Fuente de Datos: Imágenes satelitales de la página web del gobierno de la Ciudad de Buenos Aires.
-Aplicación Propuesta: Implementación por entidades recaudadoras para reducir la evasión fiscal y optimizar recursos.
-Calidad y Configuración de Datos:
-
-Dataset: Alta resolución, obtenido de una fuente gubernamental confiable.
-Preprocesamiento: Uso de GDAL para leer y escribir datos geoespaciales.
-Clases Definidas: Dos clases, 'background' y 'pileta', con sus respectivas transformaciones y visualización.
-Calidad del Código:
-
-Estructura: El código está bien organizado, con comentarios explicativos y secciones claramente definidas.
-Modelo de Deep Learning: Utiliza un modelo preentrenado de PyTorch con configuraciones específicas para la tarea.
-Visualización: Incluye código para visualizar los resultados de la segmentación semántica.
-Entrenamiento del Modelo: Configura y entrena el modelo con un conjunto de datos de entrenamiento y validación.
-Posibles Mejoras:
-
-Validación de Datos: Asegurarse de que las anotaciones y etiquetas sean precisas.
-Optimización de Hiperparámetros: Ajustar los hiperparámetros para mejorar el rendimiento del modelo.
-Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
+* Características y la calidad de los datos
+  
+   Características del Proyecto:
+   - [x] Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
+   - [x] Framework Utilizado: Raster Vision, para el proceso completo de aprendizaje profundo geoespacial.
+   - [x] Fuente de Datos: Imágenes satelitales de la página web del gobierno de la Ciudad de Buenos Aires.
+   - [x] Aplicación Propuesta: Implementación por entidades recaudadoras para reducir la evasión fiscal y optimizar recursos.
+         
+   Calidad y Configuración de Datos:
+   - [x] Dataset: Alta resolución, obtenido de una fuente gubernamental confiable.
+   - [x] Preprocesamiento: Uso de GDAL para leer y escribir datos geoespaciales.
+   - [x] Clases Definidas: Dos clases, 'background' y 'pileta', con sus respectivas transformaciones y visualización.
+         
+   Calidad del Código:
+   - [x] Estructura: El código está bien organizado, con comentarios explicativos y secciones claramente definidas.
+   - [x] Modelo de Deep Learning: Utiliza un modelo preentrenado de PyTorch con configuraciones específicas para la tarea.
+   - [x] Visualización: Incluye código para visualizar los resultados de la segmentación semántica.
+   - [x] Entrenamiento del Modelo: Configura y entrena el modelo con un conjunto de datos de entrenamiento y validación.
+         
+   Posibles Mejoras:
+   - [x] Validación de Datos: Asegurarse de que las anotaciones y etiquetas sean precisas.
+   - [x] Optimización de Hiperparámetros: Ajustar los hiperparámetros para mejorar el rendimiento del modelo.
+   - [x] Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
 
 Definir las clases para la segmentación
 
