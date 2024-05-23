@@ -64,30 +64,24 @@ Además, el sistema también podría ayudar a optimizar los recursos utilizados 
 * Visualización y evaluación: Capacidad para visualizar los resultados de la segmentación semántica y evaluar la precisión del modelo.
   
 
-Identificar los posibles beneficios y desafios del proyecto:
+:dart: ***Identificar los posibles beneficios y desafios del proyecto***
 
-El proyecto descrito tiene como objetivo utilizar imágenes satelitales y técnicas de deep learning para detectar piscinas, lo que puede tener varios beneficios y desafíos:
+Utilizar imágenes satelitales y técnicas de deep learning para detectar piscinas implica beneficios y desafíos:
 
-Beneficios:
+*Beneficios*
 
-Automatización en la detección: El uso de algoritmos de aprendizaje profundo puede automatizar y acelerar el proceso de identificación de piscinas en grandes áreas geográficas.
-Mejora en la gestión urbana: La detección precisa de piscinas puede ayudar a las entidades recaudadoras a reducir la evasión fiscal y aumentar la equidad tributaria.
+* Automatización en la detección: El uso de algoritmos de aprendizaje profundo puede automatizar y acelerar el proceso de identificación de piscinas en grandes áreas geográficas.
+  
+* Mejora en la gestión urbana: La detección precisa de piscinas puede ayudar a las entidades recaudadoras a reducir la evasión fiscal y aumentar la equidad tributaria.
 Optimización de recursos: El sistema propuesto podría optimizar los recursos utilizados en la fiscalización, haciendo el proceso más eficiente.
 
-Desafíos:
+*Desafíos*
 
-Calidad de los datos: La precisión del modelo depende de la calidad y resolución de las imágenes satelitales, así como de la precisión de las anotaciones utilizadas para el entrenamiento.
-Complejidad técnica: Implementar y mantener un sistema de aprendizaje profundo requiere conocimientos especializados y puede ser técnicamente desafiante.
-Cambios ambientales: Las condiciones ambientales y cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes satelitales, lo que podría complicar la detección.
-
-Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial
-
-💾 Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:
-Leer datos georreferenciados
-Entrenar modelos
-Realizar predicciones
-Escribir predicciones en formatos georreferenciados.
-    
+* Calidad de los datos: La precisión del modelo depende de la calidad y resolución de las imágenes satelitales, así como de la precisión de las anotaciones utilizadas para el entrenamiento.
+  
+* Complejidad técnica: Implementar y mantener un sistema de aprendizaje profundo requiere conocimientos especializados y puede ser técnicamente desafiante.
+  
+* Cambios ambientales: Las condiciones ambientales y cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes satelitales, lo que podría complicar la detección.
       
 ## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
