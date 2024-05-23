@@ -36,7 +36,7 @@
 
 ✅ Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes.
 
-:space_invader: ***Objetivo del sistema automatizado***
+ ***Objetivo del sistema automatizado***
 
 El objetivo es que dicho sistema pueda identificar piscinas en imágenes satelitales de alta resolución. Éste sistema podría ser de gran utilidad para entidades recaudadoras de impuestos, ya que permitiría identificar propiedades con piscinas que no están declaradas, lo que podría ayudar a reducir la evasión fiscal y aumentar la equidad tributaria.
 
@@ -170,19 +170,22 @@ En resumen, el AoI es crucial para enfocar el análisis de datos geoespaciales e
 
 En el caso del colab ISPC_Piletas_Entrenamiento.ipynb` , el código muestra la generación de dos variables:
 
-annotations_url = "https://drive.google.com/file/d/1V9N0xDJKApR_p3PlFZ-9xSvMWWh1Xv3o/view?usp=drive_link"
-annotations_file_dest = "/content/drive/MyDrive/Deteccion/anotaciones/anotaciones_wgs_geoj_r2.geojson"
+   - [ ] annotations_url = "https://drive.google.com/file/d/1V9N0xDJKApR_p3PlFZ-9xSvMWWh1Xv3o/view?usp=drive_link"
+         
+   - [ ] annotations_file_dest = "/content/drive/MyDrive/Deteccion/anotaciones/anotaciones_wgs_geoj_r2.geojson"
 
-Aquí, annotations_url es una variable que almacena la URL del archivo que se desea descargar desde Google Drive, y annotations_file_dest es una variable que almacena la ruta donde se guardará el archivo descargado.
+Aquí, <sup>annotations_url</sup>  es una variable que almacena la URL del archivo que se desea descargar desde Google Drive, y <sup>annotations_file_dest</sup> es una variable que almacena la ruta donde se guardará el archivo descargado.
 
-Preprocesar y Transformar los datos para su uso en el modelo.
-Se empezó a trabajar con una imagen que era bastante extensa de aproximadamente 40 manzanas pero se hizo difícil poder entrenar el modelo.
-Por lo que reducimos la imagen a 4 manzanas y se logró entrenar correctamente.
-Con dicho entrenamiento se obtuvo un modelo y se usos para predecir otro.
+***Preprocesar y Transformar los datos para su uso en el modelo*** 
+
+Se comenzó a trabajar con una imagen que era bastante extensa de aproximadamente 40 manzanas, pero se hizo difícil poder entrenar el modelo.
+Por lo que se tomó la decisión de reducir la imagen a 4 manzanas y se logró entrenar correctamente.
+
+Con dicho entrenamiento se obtuvo un modelo y se utilizó para predecir otro.
 
 ## 4. Modelado
-   >Selección y aplicación varias técnicas de modelado
->
+   >Selección y aplicación de varias técnicas de modelado
+
 Objetivo: Generación del modelo deep learning.
 Entrenar el modelo de deep learning utilizando el framework Raster Vision. Asegurarse de configurar correctamente los parámetros del modelo y de utilizar una división adecuada de los datos para el entrenamiento y la validación.
 
