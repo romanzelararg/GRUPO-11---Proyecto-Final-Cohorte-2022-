@@ -23,31 +23,29 @@
 # :black_nib: *Modelo de Referencia CRISP-DM*
 ## 1. Comprensión del Negocio
    >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado.
->Objetivos y requisitos del proyecto
-Entender la necesidad de detectar piletas en imágenes satelitales, y cómo esto puede ayudar a reducir la evasión fiscal y aumentar la equidad tributaria.
 
+:paperclip: ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
+- [x] Leer datos georreferenciados
+- [x] Entrenar modelos
+- [x] Realizar predicciones
+- [x] Escribir predicciones en formatos georreferenciados.
 
->💾 Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:
-Leer datos georreferenciados
-Entrenar modelos
-Realizar predicciones
-Escribir predicciones en formatos georreferenciados.
+💻 ***Desarrollar un sistema automatizado que use:***
 
-Se propone desarrollar un sistema automatizado:
-
-El objetivo es desarrollar un sistema automatizado que pueda identificar piscinas en imágenes satelitales de alta resolución. Este sistema podría ser de gran utilidad para entidades recaudadoras de impuestos, ya que permitiría identificar propiedades con piscinas que no están declaradas, lo que podría ayudar a reducir la evasión fiscal y aumentar la equidad tributaria.
-
-Además, este sistema también podría ayudar a optimizar los recursos utilizados en la fiscalización, ya que permitiría identificar las propiedades que deben ser inspeccionadas de manera más eficiente.
-
-💻 Se propone desarrollar un sistema automatizado que use:
 ✅ Imágenes satelitales de alta resolución para identificar posibles piletas
 
 ✅ Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes.
 
+:space_invader: ***Objetivo del sistema automatizado***
 
-Identificación de las partes interesadas y sus necesidades.
+El objetivo es que dicho sistema pueda identificar piscinas en imágenes satelitales de alta resolución. Éste sistema podría ser de gran utilidad para entidades recaudadoras de impuestos, ya que permitiría identificar propiedades con piscinas que no están declaradas, lo que podría ayudar a reducir la evasión fiscal y aumentar la equidad tributaria.
 
-Partes interesadas:
+Además, el sistema también podría ayudar a optimizar los recursos utilizados en la fiscalización, ya que permitiría identificar las propiedades que deben ser inspeccionadas de manera más eficiente.
+
+
+:pencil: ***Identificación de las partes interesadas y sus necesidades***
+
+*Partes interesadas:*
 
 Entidades recaudadoras: Buscan utilizar el sistema para reducir la evasión fiscal, aumentar la equidad tributaria y optimizar recursos en la fiscalización.
 Equipo de desarrollo del proyecto: Incluye a Romina Yael Hanun, Federico Juchniewicz, Samuel Kanneman, Carla Lucero, Leonardo Matías Mansilla y Román Zelarayán, quienes están a cargo de desarrollar y entrenar el modelo de deep learning.
