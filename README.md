@@ -72,14 +72,21 @@ Beneficios:
 Automatización en la detección: El uso de algoritmos de aprendizaje profundo puede automatizar y acelerar el proceso de identificación de piscinas en grandes áreas geográficas.
 Mejora en la gestión urbana: La detección precisa de piscinas puede ayudar a las entidades recaudadoras a reducir la evasión fiscal y aumentar la equidad tributaria.
 Optimización de recursos: El sistema propuesto podría optimizar los recursos utilizados en la fiscalización, haciendo el proceso más eficiente.
+
 Desafíos:
 
 Calidad de los datos: La precisión del modelo depende de la calidad y resolución de las imágenes satelitales, así como de la precisión de las anotaciones utilizadas para el entrenamiento.
 Complejidad técnica: Implementar y mantener un sistema de aprendizaje profundo requiere conocimientos especializados y puede ser técnicamente desafiante.
 Cambios ambientales: Las condiciones ambientales y cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes satelitales, lo que podría complicar la detección.
+
+Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial
+
+💾 Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:
+Leer datos georreferenciados
+Entrenar modelos
+Realizar predicciones
+Escribir predicciones en formatos georreferenciados.
     
-
-
       
 ## 2. Comprensión de los Datos
    >Recopilación , primeros conocimientos de los datos
