@@ -155,10 +155,39 @@ Estas clases permiten al modelo aprender a distinguir entre las características
 
 ## 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
+Preparar los datos para el modelado:
+Implica la limpieza de las imágenes, la evaluación del dataset (evaluación visual de correspondencia de las anotaciones), la eliminación de las partes no deseadas y la preparación de las etiquetas para el entrenamiento del modelo.
+>
+Definición de nuestra área de interés
+El Área de Interés (AoI) se refiere a la región geográfica específica que se está analizando o estudiando. En nuestro caso, está relacionada con la detección de piletas (piscinas) utilizando imágenes satelitales y técnicas de aprendizaje profundo.
 
-:bookmark_tabs: Definimos la configuracion para la clasificación y el preprocesamineto de las imágenes , especificamente para segmentación y clasificación que incluyen "pileta" (piscina) y "background" (fondo).
+El AoI se define mediante un archivo GeoJSON, que es un formato de archivo abierto para representar datos geoespaciales simples. Este archivo contiene información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON. En el contexto del aprendizaje automático y el procesamiento de imágenes, el AoI se utiliza para delimitar la región sobre la cual el modelo realizará predicciones o análisis.
 
-:bookmark_tabs: Definimos el tamaño en pixeles de los recortes cuadrados que se van a usar para entrenar el modelo y una serie de trasformaciones que ayudan a mejorar la robustez y generalización del modelo entrenandolo con variaciones de las imágenes originales.
+En resumen, el AoI es crucial para enfocar el análisis de datos geoespaciales en una región específica y es un componente esencial en proyectos de visión por computadora y teledetección que involucran datos georreferenciados.
+
+Entrenamiento del modelo 'resnet18'
+
+Carga del Modelo Preentrenado:
+
+Se carga un modelo resnet18 preentrenado utilizando torch.hub.
+Se configura el modelo para la tarea específica de segmentación semántica con las clases definidas.
+Entrenamiento del Modelo:
+
+Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
+Se realizan iteraciones (épocas) donde el modelo aprende a identificar piletas en las imágenes.
+
+Generación de variable
+En el caso del colab ISPC_Piletas_Entrenamiento.ipynb` , el código muestra la generación de dos variables:
+
+annotations_url = "https://drive.google.com/file/d/1V9N0xDJKApR_p3PlFZ-9xSvMWWh1Xv3o/view?usp=drive_link"
+annotations_file_dest = "/content/drive/MyDrive/Deteccion/anotaciones/anotaciones_wgs_geoj_r2.geojson"
+
+Aquí, annotations_url es una variable que almacena la URL del archivo que se desea descargar desde Google Drive, y annotations_file_dest es una variable que almacena la ruta donde se guardará el archivo descargado.
+
+Preprocesar y Transformar los datos para su uso en el modelo.
+Se empezó a trabajar con una imagen que era bastante extensa de aproximadamente 40 manzanas pero se hizo difícil poder entrenar el modelo.
+Por lo que reducimos la imagen a 4 manzanas y se logró entrenar correctamente.
+Con dicho entrenamiento se obtuvo un modelo y se usos para predecir otro.
 
 ## 4. Modelado
    >Selección y aplicación varias técnicas de modelado
