@@ -24,13 +24,13 @@
 ## 1. Comprensión del Negocio
    >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado.
 
-:paperclip: ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
+ ***Mediante el framework Raster Vision se propone realizar el procedimiento completo de aprendizaje profundo geoespacial:***
 - [x] Leer datos georreferenciados
 - [x] Entrenar modelos
 - [x] Realizar predicciones
 - [x] Escribir predicciones en formatos georreferenciados.
 
-💻 ***Desarrollar un sistema automatizado que use:***
+ ***Desarrollar un sistema automatizado que use:***
 
 ✅ Imágenes satelitales de alta resolución para identificar posibles piletas
 
@@ -42,8 +42,7 @@ El objetivo es que dicho sistema pueda identificar piscinas en imágenes satelit
 
 Además, el sistema también podría ayudar a optimizar los recursos utilizados en la fiscalización, ya que permitiría identificar las propiedades que deben ser inspeccionadas de manera más eficiente.
 
-
-:pencil: ***Identificación de las partes interesadas y sus necesidades***
+***Identificación de las partes interesadas y sus necesidades***
 
 *Partes interesadas:*
 
@@ -63,8 +62,7 @@ Además, el sistema también podría ayudar a optimizar los recursos utilizados 
   
 * Visualización y evaluación: Capacidad para visualizar los resultados de la segmentación semántica y evaluar la precisión del modelo.
   
-
-:dart: ***Identificar los posibles beneficios y desafios del proyecto***
+***Identificar los posibles beneficios y desafios del proyecto***
 
 Utilizar imágenes satelitales y técnicas de deep learning para detectar piscinas implica beneficios y desafíos:
 
@@ -111,8 +109,6 @@ Los archivos GeoJSON contienen información geográfica, como puntos, líneas y 
 Las transformaciones de aumento de datos son técnicas comunes para aumentar artificialmente la diversidad de los datos de entrenamiento sin recopilar nuevos datos, lo que puede mejorar la capacidad del modelo para generalizar a nuevas imágenes.
 
 * Identificar las características y la calidad de los datos.
-
-* Características y la calidad de los datos
   
    Características del Proyecto:
    - [x] Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
@@ -136,40 +132,42 @@ Las transformaciones de aumento de datos son técnicas comunes para aumentar art
    - [x] Optimización de Hiperparámetros: Ajustar los hiperparámetros para mejorar el rendimiento del modelo.
    - [x] Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
 
-Definir las clases para la segmentación
+* Definir las clases para la segmentación.
 
 En el contexto de la segmentación semántica en deep learning, las "clases" se refieren a las categorías de objetos que el modelo está diseñado para reconocer en las imágenes. Cada píxel en la imagen se clasifica en una de las clases posibles.
 
 En el colab ISPC_Piletas_Entrenamiento.ipynb`, las clases para la segmentación probablemente serían al menos dos: 'pileta' (piscina) y 'background' (fondo). Esto significa que el modelo está entrenado para reconocer y diferenciar entre estas dos categorías en las imágenes satelitales.
 
-La clase 'pileta' correspondería a los píxeles que representan piscinas en las imágenes.
-La clase 'background' correspondería a todos los demás píxeles que no representan piscinas.
+   - [x] La clase 'pileta' correspondería a los píxeles que representan piscinas en las imágenes.
+   - [x] La clase 'background' correspondería a todos los demás píxeles que no representan piscinas.
+         
 Estas clases permiten al modelo aprender a distinguir entre las características visuales de las piscinas y el resto de la imagen. Una vez entrenado, el modelo puede aplicarse a nuevas imágenes para identificar y segmentar las piscinas.
 
 ## 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
-Preparar los datos para el modelado:
-Implica la limpieza de las imágenes, la evaluación del dataset (evaluación visual de correspondencia de las anotaciones), la eliminación de las partes no deseadas y la preparación de las etiquetas para el entrenamiento del modelo.
->
-Definición de nuestra área de interés
+
+   :test_tube: Preparar los datos para el modelado implica la limpieza de las imágenes, la evaluación del dataset (evaluación visual de correspondencia de las anotaciones), la eliminación de las partes no deseadas y la preparación de las etiquetas para el entrenamiento del modelo.
+
+***Definición de nuestra área de interés***
+
 El Área de Interés (AoI) se refiere a la región geográfica específica que se está analizando o estudiando. En nuestro caso, está relacionada con la detección de piletas (piscinas) utilizando imágenes satelitales y técnicas de aprendizaje profundo.
 
 El AoI se define mediante un archivo GeoJSON, que es un formato de archivo abierto para representar datos geoespaciales simples. Este archivo contiene información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON. En el contexto del aprendizaje automático y el procesamiento de imágenes, el AoI se utiliza para delimitar la región sobre la cual el modelo realizará predicciones o análisis.
 
 En resumen, el AoI es crucial para enfocar el análisis de datos geoespaciales en una región específica y es un componente esencial en proyectos de visión por computadora y teledetección que involucran datos georreferenciados.
 
-Entrenamiento del modelo 'resnet18'
+***Entrenamiento del modelo 'resnet18'***
 
-Carga del Modelo Preentrenado:
+* Carga del Modelo Preentrenado:
+   - [x] Se carga un modelo resnet18 preentrenado utilizando torch.hub.
+   - [x] Se configura el modelo para la tarea específica de segmentación semántica con las clases definidas.
+  
+* Entrenamiento del Modelo:
+   - [x] Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
+   - [x] Se realizan iteraciones (épocas) donde el modelo aprende a identificar piletas en las imágenes.
 
-Se carga un modelo resnet18 preentrenado utilizando torch.hub.
-Se configura el modelo para la tarea específica de segmentación semántica con las clases definidas.
-Entrenamiento del Modelo:
+***Generación de variable***
 
-Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
-Se realizan iteraciones (épocas) donde el modelo aprende a identificar piletas en las imágenes.
-
-Generación de variable
 En el caso del colab ISPC_Piletas_Entrenamiento.ipynb` , el código muestra la generación de dos variables:
 
 annotations_url = "https://drive.google.com/file/d/1V9N0xDJKApR_p3PlFZ-9xSvMWWh1Xv3o/view?usp=drive_link"
