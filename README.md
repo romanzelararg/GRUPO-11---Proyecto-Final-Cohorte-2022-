@@ -215,7 +215,7 @@ El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos 
 
 ***Monitorear el rendimiento del modelo durante el entrenamiento***
 
-* Visualización: Se utiliza SemanticSegmentationVisualizer para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
+* Visualización: Se utiliza <sup>SemanticSegmentationVisualizer</sup> para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
 
 * Registro de Estadísticas: Se registran estadísticas de los datos para asegurarse de que el entrenamiento se base en datos sólidos y bien informados.
   
