@@ -186,42 +186,40 @@ Con dicho entrenamiento se obtuvo un modelo y se utilizó para predecir otro.
 ## 4. Modelado
    >Selección y aplicación de varias técnicas de modelado
 
-Objetivo: Generación del modelo deep learning.
-Entrenar el modelo de deep learning utilizando el framework Raster Vision. Asegurarse de configurar correctamente los parámetros del modelo y de utilizar una división adecuada de los datos para el entrenamiento y la validación.
+Generación del modelo deep learning y su entrenamiento utilizando el framework Raster Vision. Asegurandonos de configurar correctamente los parámetros del modelo y de utilizar una división adecuada de los datos para el entrenamiento y la validación.
 
-Seleccionar el modelo de aprendizaje profundo (ResNet-18).
-ResNet-18 es una arquitectura de red neuronal convolucional que ha demostrado ser muy efectiva en tareas de reconocimiento de imágenes. La versión "18" se refiere a la profundidad de la red, es decir, el número de capas que tiene.
+***Seleccionar el modelo de aprendizaje profundo (ResNet-18)***
 
-Las ResNets son conocidas por su capacidad para entrenar redes muy profundas gracias a sus "conexiones residuales" o "conexiones de salto". Estas conexiones permiten que el gradiente se propague directamente a través de varias capas sin atenuarse, lo que ayuda a mitigar el problema del "gradiente que desaparece", un problema común cuando se entrenan redes neuronales profundas.
+ResNet-18 es una arquitectura de red neuronal convolucional que ha demostrado ser muy efectiva en tareas de reconocimiento de imágenes.
 
 En el contexto del colab ISPC_Piletas_Entrenamiento.ipynb, ResNet-18 ha sido seleccionado por varias razones:
 
-Eficiencia: ResNet-18 es relativamente ligero en comparación con otras variantes de ResNet (como ResNet-50, ResNet-101, etc.), lo que lo hace más rápido y eficiente en términos de memoria y tiempo de cálculo.
-Rendimiento: A pesar de su simplicidad, ResNet-18 puede ofrecer un rendimiento sólido en muchas tareas de visión por computadora, incluyendo la detección y segmentación de objetos.
-Preentrenamiento: ResNet-18 está disponible como un modelo preentrenado en varias bibliotecas de deep learning, lo que permite un inicio rápido y mejora el rendimiento al aprovechar los patrones aprendidos de grandes conjuntos de datos como ImageNet.
+   - [ ] Eficiencia: ResNet-18 es relativamente ligero en comparación con otras variantes de ResNet (como ResNet-50, ResNet-101, etc.), lo que lo hace más rápido y eficiente en términos de memoria y tiempo de cálculo.
+   - [ ] Rendimiento: A pesar de su simplicidad, ResNet-18 puede ofrecer un rendimiento sólido en muchas tareas de visión por computadora, incluyendo la detección y segmentación de objetos.
+   - [ ] Preentrenamiento: ResNet-18 está disponible como un modelo preentrenado en varias bibliotecas de deep learning, lo que permite un inicio rápido y mejora el rendimiento al aprovechar los patrones aprendidos de grandes conjuntos de datos como ImageNet.
 
-Configurar el modelo y los parámetros de entrenamiento.
+***Configurar el modelo y los parámetros de entrenamiento***
 
-Selección del Modelo: Se ha seleccionado ResNet-18, que es una arquitectura de red neuronal convolucional conocida por su eficacia en tareas de reconocimiento de imágenes.
+* Selección del Modelo: Se ha seleccionado ResNet-18, que es una arquitectura de red neuronal convolucional conocida por su eficacia en tareas de reconocimiento de imágenes.
 
-Configuración de Parámetros del Modelo: Los parámetros del modelo, como el número de capas y neuronas, así como las funciones de activación, se configuran de acuerdo con las necesidades de la tarea.
+* Configuración de Parámetros del Modelo: Los parámetros del modelo, como el número de capas y neuronas, así como las funciones de activación, se configuran de acuerdo con las necesidades de la tarea.
 
-Configuración de Parámetros de Entrenamiento: Los parámetros de entrenamiento, como el número de épocas, el tamaño del lote y la tasa de aprendizaje, se establecen. Estos parámetros pueden tener un gran impacto en la eficacia del entrenamiento.
+* Configuración de Parámetros de Entrenamiento: Los parámetros de entrenamiento, como el número de épocas, el tamaño del lote y la tasa de aprendizaje, se establecen. Estos parámetros pueden tener un gran impacto en la eficacia del entrenamiento.
 
-Entrenar el modelo con los datos de entrenamiento.
+***Entrenar el modelo con los datos de entrenamiento***
 
-Entrenamiento del Modelo: El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos y los parámetros internos de la red para minimizar el error.
+El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos y los parámetros internos de la red para minimizar el error.
 
-. Entrenamiento del Modelo:
+   - [x] Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
+   - [x] Se realizan iteraciones (epoch) donde el modelo aprende a identificar piletas en las imágenes.
 
-Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
-Se realizan iteraciones (epoch) donde el modelo aprende a identificar piletas en las imágenes.
+***Monitorear el rendimiento del modelo durante el entrenamiento***
 
-Monitorear el rendimiento del modelo durante el entrenamiento.
+* Visualización: Se utiliza SemanticSegmentationVisualizer para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
 
-Visualización: Se utiliza SemanticSegmentationVisualizer para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
-Registro de Estadísticas: Se registran estadísticas de los datos para asegurarse de que el entrenamiento se base en datos sólidos y bien informados.
-Guardado del Modelo: Una vez completado el entrenamiento, se guarda el modelo y su configuración para su uso futuro.
+* Registro de Estadísticas: Se registran estadísticas de los datos para asegurarse de que el entrenamiento se base en datos sólidos y bien informados.
+  
+* Guardado del Modelo: Una vez completado el entrenamiento, se guarda el modelo y su configuración para su uso futuro.
 
 
 ## 5. Evaluación
