@@ -9,16 +9,16 @@
 
 ### *Colaboradores:*
 
-- [Hanun Romina](https://github.com/RomiHanun) 
-- [Kanneman Samuel](https://github.com/samuelkanneman)
-- [Zelarayán Román ](https://github.com/romanzelararg)
-- [Mansilla Leonardo Matias ](https://github.com/LMmansilla)
-- [Lucero Carla](https://github.com/CarlaLucerocd)
-- [Juchniewicz Federico](https://github.com/FJISPC)
+- [Hanun, Romina](https://github.com/RomiHanun) 
+- [Kanneman, Samuel](https://github.com/samuelkanneman)
+- [Zelarayán, Román ](https://github.com/romanzelararg)
+- [Mansilla, Leonardo Matias ](https://github.com/LMmansilla)
+- [Lucero, Carla](https://github.com/CarlaLucerocd)
+- [Juchniewicz, Federico](https://github.com/FJISPC)
 
 ![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/img_SAS_wgs_r.jpg)
 
-### :electron: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
+### :electron: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestión Urbana es la detección de piletas.*
 
 ## :black_nib: *Modelo de Referencia CRISP-DM*
 ### 1. Comprensión del Negocio
