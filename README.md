@@ -32,9 +32,9 @@
 
 :pushpin: ***Desarrollar un sistema automatizado que use:***
 
-✅ Imágenes satelitales de alta resolución para identificar posibles piletas
+- [x] Imágenes satelitales de alta resolución para identificar posibles piletas
 
-✅ Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes.
+- [x] Algoritmos de aprendizaje profundo, entrenados para reconocer formas y reflejos de agua en las imágenes.
 
 :pushpin: ***Objetivo del sistema automatizado***
 
