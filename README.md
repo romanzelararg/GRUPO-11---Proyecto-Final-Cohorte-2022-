@@ -46,22 +46,22 @@ Además, el sistema también podría ayudar a optimizar los recursos utilizados 
 
 El problema a resolver es la detección automatizada de piscinas en imágenes satelitales. Para abordar este problema, se propone un procedimiento completo de aprendizaje profundo geoespacial utilizando framework Raster Vision, que incluye:
 
-● *Lectura de datos georreferenciados*
-* Se obtendrán imágenes satelitales de alta resolución, que serán utilizadas como base de datos principal. Estas imágenes deben ser accesibles sin la necesidad de autenticación, facilitando así el flujo de trabajo. 
-* Utilizaremos herramientas como Raster Vision y GDAL (Geospatial Data Abstraction Library) para la lectura y manipulación de estos datos, asegurando que la información geoespacial sea correctamente procesada y preparada para el entrenamiento del modelo.
+- *Lectura de datos georreferenciados*
+   * Se obtendrán imágenes satelitales de alta resolución, que serán utilizadas como base de datos principal. Estas imágenes deben ser accesibles sin la necesidad de autenticación, facilitando así el flujo de trabajo. 
+   * Utilizaremos herramientas como Raster Vision y GDAL (Geospatial Data Abstraction Library) para la lectura y manipulación de estos datos, asegurando que la información geoespacial sea correctamente procesada y preparada para el entrenamiento del modelo.
   
-●	*Entrenamiento de modelos*
-* Se entrenan modelos de aprendizaje profundo, específicamente redes neuronales convolucionales(CNN), para reconocer las características distintivas de las piscinas en las imágenes satelitales.
-* El entrenamiento del modelo incluirá la segmentación semántica , permitiendo distinguir entre diferentes tipos de superficies y detectar con precisión las piscinas.Este proceso implica la anotación de imágenes para crear un conjunto de datos de entrenamiento robusto.
-* La calidad de las anotaciones es crucial, por lo que se invertirá tiempo en asegurar que los datos etiquetados sean precisos y representativos.
+- *Entrenamiento de modelos*
+   * Se entrenan modelos de aprendizaje profundo, específicamente redes neuronales convolucionales(CNN), para reconocer las características distintivas de las piscinas en las imágenes satelitales.
+   * El entrenamiento del modelo incluirá la segmentación semántica , permitiendo distinguir entre diferentes tipos de superficies y detectar con precisión las piscinas.Este proceso implica la anotación de imágenes para crear un conjunto de datos de entrenamiento robusto.
+   * La calidad de las anotaciones es crucial, por lo que se invertirá tiempo en asegurar que los datos etiquetados sean precisos y representativos.
   
-●	*Realización de predicciones*
-* Una vez que el modelo esté entrenado , se aplicará a nuevas imágenes satelitales para identificar y localizar piscinas.
-* Las predicciones serán validadas y ajustadas para mejorar la precisión del sistema .Esto incluye la evaluación del rendimiento del modelo utilizando métricas como la precisión , el recall y el F1-score, y realizando ajustes basados en los resultados de estas evaluaciones.
+- *Realización de predicciones*
+   * Una vez que el modelo esté entrenado , se aplicará a nuevas imágenes satelitales para identificar y localizar piscinas.
+   * Las predicciones serán validadas y ajustadas para mejorar la precisión del sistema .Esto incluye la evaluación del rendimiento del modelo utilizando métricas como la precisión , el recall y el F1-score, y realizando ajustes basados en los resultados de estas evaluaciones.
 
-●	*Escritura de predicciones en formatos georreferenciados*
-* Las predicciones realizadas por el modelo serán convertidas en formatos georreferenciados que puedan ser integradas fácilmente en sistemas de información geográfica(SIG).
-* Esta fase asegura que los resultados puedan ser utilizados para escribir las predicciones en formatos estándar, asegurando la compatibilidad con diferentes plataformas y aplicaciones.
+- *Escritura de predicciones en formatos georreferenciados*
+   * Las predicciones realizadas por el modelo serán convertidas en formatos georreferenciados que puedan ser integradas fácilmente en sistemas de información geográfica(SIG).
+   * Esta fase asegura que los resultados puedan ser utilizados para escribir las predicciones en formatos estándar, asegurando la compatibilidad con diferentes plataformas y aplicaciones.
 
 :pushpin: ***Desarrollo del Sistema Automatizado***
 
