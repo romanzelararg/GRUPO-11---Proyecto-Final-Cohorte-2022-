@@ -255,6 +255,36 @@ El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos 
 
 ### 5. Evaluación
    >Evaluación del modelo y revisión de los pasos ejecutados
+La evaluación del rendimiento del modelo permite comprender cómo se comporta el modelo en datos no vistos durante el entrenamiento .Este análisis se realiza utilizando el conjunto de datos de validación y se mide mediante diversas métricas de evaluación  como la precisión, la exhaustividad (recall), el puntaje F1 y el AUC-ROC.
+
+:microscope: ***Propósitos de la Evaluación***
+Evaluar el rendimiento del modelo con los datos de validación es crucial para varios propósitos:
+
+1.	*Generalización:* Evaluar cómo el modelo se comporta en datos no vistos durante el entrenamiento. Los datos de validación proporcionan una estimación realista del rendimiento en situaciones del mundo real.
+2.	*Ajustes de Hiperparametros:* Durante la validación, podemos ajustar los hiper parámetros del modelo (como la tasa de aprendizaje, el tamaño del lote, etc) para obtener un mejor rendimiento.
+3.	*Selección de Modelos:* Comparamos diferentes modelos o arquitecturas utilizando los datos de validación para elegir el mejor.
+4.	*Evitar el sobreajuste:* Si el modelo tiene un rendimiento excelente en los datos de entrenamiento, pero no en los de validación, podría ser sobre ajustado. La validación ayuda a detectar esto.
+   
+En resumen, la evaluación con datos de validación nos permite comprender como nuestro modelo se desempeñará en el mundo real y tomar decisiones informadas para mejorarlo.
+
+:microscope: ***Métricas de Evaluación utilizadas***
+
+Para una evaluación exhaustiva del modelo, utilizamos varias métricas de evaluación que ofrecen una visión completa del rendimiento:
+
+•	Precisión: Mide la proporción de predicciones positivas correctas respecto al total de predicciones positivas.
+
+•	Recall (Exhaustividad): Mide la proporción de verdaderos positivos respecto al total de instancias reales positivas.
+
+•	F1-score: Es la media armónica entre precisión y recall, proporcionando un equilibrio entre ambas métricas.
+
+•	Especificidad: Mide la proporcion de verdaderos negativos respecto al total de instancias reales negativas.
+
+•	AUC-ROC: Mide el rendimiento del modelo a través de todas las posibles clasificaciones de umbrales.
+
+:microscope: ***Evaluación para la Clase “Background”***
+
+Analizamos los resultados de evaluación para la clase ID O, que corresponde a la clase
+
 
 ### 6. Despliegue
     >Generar un informe o implementar un proceso.
