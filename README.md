@@ -492,8 +492,30 @@ La precisión es alta, esto significa que la mayoría de las predicciones positi
 La precisión es del 100%, todas las predicciones son correctas. El recall es muy bajo, el modelo tiene dificultades para identificar correctamente las piscinas, el F1-score también es bajo, esto se debe al bajo recall. La especificidad es alta, el modelo identifica correctamente las instancias negativas. El error de conteo (falsos negativos) es de 93.874, y la clase pileta representa aproximadamente el 0.09% de las instancias en la imagen.
 
 
-### 6. Despliegue
-    >Generar un informe o implementar un proceso.
+## Conclusiones
+En este proyecto, hemos demostrado cómo la automatización en la detección de piletas puede mejorar significativamente la gestión urbana y optimizar recursos, utilizando el poder del deep learning y el procesamiento de imágenes satelitales. A pesar de enfrentar desafíos notables como la calidad de los datos, la complejidad técnica y los cambios ambientales, hemos verificado que nuestro modelo es eficiente para evaluar la cantidad de piscinas detectadas, siempre que se controlen factores críticos como el tamaño y la calidad de las imágenes.
+
+Para mejorar aún más este modelo, es esencial enfocarse en la recopilación de datos específicos, el aumento de datos, el ajuste de hiperparámetros y la optimización continua. Estos pasos adicionales permitirán superar las limitaciones actuales y maximizar el potencial del modelo para aplicaciones futuras en la gestión urbana.
+Concluimos en este Proyecto que, con los datos obtenidos y entrenados, se verifica que el modelo genera eficiencia a la hora de evaluar la cantidad de piscinas detectadas, siempre y cuando se controle la imagen a trabajar (tamaño, calidad, etc).
+
+
+## Recomendaciones futuras
+
+Algunas recomendaciones que pueden ayudar a optimizar impacto y utilidad de éste proyecto en el futuro:
+
+  1. *Extender a Otras Características Urbanas:* Investigar la posibilidad de extender el sistema para detectar otras características urbanas relevantes, como construcciones ilegales, áreas verdes, etc. Esto ampliaría su utilidad y beneficios.
+
+    - Construcciones Ilegales: Identificar edificaciones no autorizadas o construcciones ilegales en áreas urbanas. Esto podría ayudar a las autoridades a tomar medidas rápidas y eficientes.
+    - Áreas Verdes y Espacios Públicos: Detectar parques, plazas y áreas verdes en la ciudad. Esto podría ser útil para la planificación urbana y la gestión de espacios públicos.
+    - Estacionamientos y Vehículos: Identificar áreas de estacionamiento, vehículos estacionados en lugares no permitidos o incluso contar la cantidad de automóviles en una zona específica.
+    - Infraestructura Vial: Detectar señales de tráfico, semáforos, cruces peatonales y otros elementos de infraestructura vial.
+    - Calidad del Aire y Contaminación: Utilizar imágenes satelitales para evaluar la calidad del aire y detectar fuentes de contaminación.
+
+  2. *Evaluación en Otras Ciudades y Regiones:* Evaluar la viabilidad de aplicar el sistema en otras ciudades y regiones, considerando la disponibilidad de datos y las necesidades específicas locales. Esto podría ayudar a replicar el éxito en otros contextos.
+
+  3. *Mejora Continua y Actualizaciones:* Implementar un sistema de monitoreo para evaluar continuamente el rendimiento del sistema en producción. Planificar actualizaciones y mejoras basadas en nuevos datos y tecnologías emergentes.
+
+  4. *Documentación y Capacitación:* Continuar documentando detalladamente el proceso de desarrollo, incluyendo la recolección de datos, el entrenamiento del modelo y la integración del sistema. Además, capacitar al personal de las entidades recaudadoras en el uso del sistema y la interpretación de los resultados.
 
     
 
