@@ -106,7 +106,7 @@ o	Planificar actualizaciones y mejoras basadas en nuevos datos y tecnologías em
 Este enfoque detallado y estructurado asegura que el proyecto no solo cumpla con los objetivos técnicos, sino que también aporte beneficios tangibles para la gestión urbana y fiscal de la Ciudad de Buenos Aires.
 
 ### Procesamiento 
-![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/P%C3%B3ster%20Gr%C3%A1fico%20de%20pasos%20Corporativo%20Multicolor%20(1).png)
+![ImagenSatelital](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/blob/main/P%C3%B3ster%20Gr%C3%A1fico%20de%20pasos%20Corporativo%20Multicolor%20(1)%20(1).png)
 
 
 ## :black_nib: *Modelo de Referencia CRISP-DM*
