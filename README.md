@@ -20,6 +20,92 @@
 
 ### :electron: *El procesamiento de imágenes, combinado con machine learning, ofrece un gran potencial para la ciencia de datos. Un ejemplo de aplicación y uso para la Gestion Urbana es la detección de piletas.*
 
+### *Antecedentes*
+La idea de utilizar imágenes satelitales para la detección de piletas surge de la necesidad de gestionar mejor el consumo de agua en localidades con problemas de abastecimiento, ya que la información obtenida es valiosa para las empresas proveedoras de agua, ayudándolas a ajustar la provisión según la estacionalidad y la demanda; además de favorecer la reducción de la evasión fiscal, el aumento de la equidad tributaria y la optimización de recursos en la fiscalización. Las municipalidades están llevando a cabo relevamientos de piletas para medir el uso del agua y optimizar los recursos hídricos.
+
+Un antecedente relevante se encuentra en las provincias de Córdoba y Neuquén, donde se emplearon imágenes satelitales para identificar piletas domiciliarias. Aunque inicialmente este proceso era manual y dependía de filtros específicos, se ha avanzado hacia la automatización con el uso de tecnologías de alta resolución y machine learning.
+
+En Córdoba, a partir de 2022, se implementó un sistema avanzado de imágenes satelitales en cuatro bandas, incluyendo infrarrojas, que permitió una detección más precisa de zonas húmedas y piletas. Este sistema ha mejorado significativamente la capacidad de captación de datos, incrementando la detección de metros cuadrados construidos no declarados y piletas. Los resultados han sido notables: hasta septiembre de 2023, se detectaron 44 millones de metros cuadrados y más de 28 mil nuevas piletas en la provincia. Este avance no solo refleja un aumento en la construcción, sino principalmente una mejora en la tecnología de monitoreo y en el procesamiento de datos. La incorporación de inteligencia artificial ha optimizado el rendimiento del software y la eficiencia de los operadores.
+
+Estos desarrollos subrayan la importancia de adoptar tecnologías avanzadas como el machine learning para la detección automatizada de piletas mediante imágenes satelitales, contribuyendo así a una gestión más eficiente de los recursos hídricos y fiscales.
+
+https://www.lavoz.com.ar/politica/record-de-deteccion-de-metros-construidos-y-de-piletas-sin-declarar-en-cordoba/
+
+### *Introducción*
+El procesamiento de imágenes combinado con técnicas de machine learning ofrece un vasto potencial para la ciencia de datos, especialmente en el ámbito de la gestión urbana. Un ejemplo destacado de esta sinergia es la detección de piletas mediante imágenes satelitales y algoritmos de deep learning. Éste proyecto tiene como objetivo desarrollar un sistema automatizado que utilice imágenes satelitales de alta resolución y aprendizaje profundo para identificar piscinas en la Ciudad de Buenos Aires.
+
+Para llevar a cabo ésta tarea, se utilizará el framework Raster Vision, que permite realizar el procedimiento completo de aprendizaje profundo geoespacial: desde la lectura de datos georreferenciados hasta el entrenamiento de modelos, la realización de predicciones y la escritura de estas predicciones en formatos georreferenciados. El dataset de evidencia de campo, que incluye relevamientos de piscinas, será obtenido Gerencia de Generación de datos del GCBA (https://buenosaires.gob.ar/antropologia-urbana/herramientas-para-la-generacion-de-datos-territoriales).
+
+El sistema propuesto no solo facilitará la identificación de piscinas mediante algoritmos entrenados para reconocer formas y reflejos de agua en las imágenes, sino que también ofrecerá múltiples beneficios a las entidades recaudadoras. Entre estos beneficios se destacan la reducción de la evasión fiscal, el aumento de la equidad tributaria y la optimización de recursos en la fiscalización. Además, esta información será valiosa para las empresas proveedoras de agua, ayudándolas a ajustar la provisión según la estacionalidad y demanda.
+
+Sin embargo, el proyecto también enfrenta varios desafíos. La calidad de los datos es fundamental; la precisión del modelo dependerá de la resolución de las imágenes satelitales y de la exactitud de las anotaciones utilizadas para el entrenamiento. La complejidad técnica del desarrollo y mantenimiento del sistema de aprendizaje profundo requiere conocimientos especializados. Además, las condiciones ambientales y los cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes, complicando su detección.
+
+En resumen, éste proyecto busca aprovechar el poder del deep learning y el procesamiento de imágenes satelitales para mejorar la gestión urbana mediante la detección automatizada de piletas, ofreciendo así beneficios tangibles y enfrentando desafíos técnicos y ambientales significativos.
+
+### *Objetivo General*
+Desarrollar un sistema automatizado basado en deep learning para detectar piletas mediante fotos aéreas o imágenes satelitales de alta resolución, utilizando el framework Raster Vision, con el fin de mejorar la gestión urbana y fiscal en la Ciudad de Buenos Aires.
+
+#### Objetivos Específicos
+##### Recolección y Preparación de Datos
+o	Obtener un Dataset, producto de un relevamiento de la Gerencia de Generación de datos del GCBA, que funcione como evidencia de campo. 
+- https://buenosaires.gob.ar/antropologia-urbana/herramientas-para-la-generacion-de-datos-territoriales
+  
+o	Corroborar una muestra de estas etiquetas para crear un conjunto de datos de entrenamiento consistente.
+
+o	Obtener un conjunto de imágenes satelitales descargadas mediante el software SAS-PLANET.
+- Desarrollo del Modelo de Deep Learning
+  
+o	Configurar el entorno de trabajo utilizando el framework Raster Vision para el procesamiento de datos georreferenciados.
+
+o	Diseñar y entrenar un modelo de aprendizaje profundo que pueda identificar piletas, basándose en características visuales como formas y reflejos de agua.
+
+o	Evaluar el rendimiento del modelo utilizando métricas adecuadas (precisión, recall, F1 score) y realizar ajustes necesarios para optimizar su desempeño.
+- Implementación del Sistema de Detección
+o	Integrar el modelo entrenado en un pipeline automatizado que procese nuevas imágenes satelitales y realice predicciones sobre la presencia de piletas.
+
+o	Implementar un sistema para almacenar y visualizar las predicciones en formatos georreferenciados, facilitando su integración con sistemas de información geográfica (SIG).
+- Validación y Verificación
+  
+o	Realizar pruebas de campo y validación cruzada para asegurar la precisión y robustez del sistema en diversas áreas de la ciudad.
+
+o	Ajustar el modelo y el sistema en base a los resultados obtenidos para mejorar su confiabilidad y precisión.
+- Aplicación y Beneficios
+  
+o	Desarrollar informes y visualizaciones que demuestren cómo el sistema puede ser utilizado por entidades recaudadoras para detectar piletas no registradas, reduciendo la evasión fiscal y aumentando la equidad tributaria.
+
+o	Presentar un análisis costo-beneficio que muestre cómo la implementación del sistema puede optimizar recursos en la fiscalización urbana.
+- Documentación y Capacitación
+  
+o	Documentar detalladamente el proceso de desarrollo, incluyendo la recolección de datos, el entrenamiento del modelo, la integración del sistema y los resultados de validación.
+
+o	Capacitar al personal de las entidades recaudadoras en el uso del sistema y la interpretación de los resultados.
+- Exploración de Extensiones Futuras
+  
+o	Investigar la posibilidad de extender el sistema para detectar otras características urbanas relevantes (como construcciones ilegales, áreas verdes, etc.).
+
+o	Evaluar la viabilidad de aplicar el sistema en otras ciudades y regiones, considerando la disponibilidad de datos y las necesidades específicas locales.
+
+
+#### Metodología
+##### Análisis de Requisitos:
+o	Definir claramente los requisitos técnicos y funcionales del sistema.
+
+o	Establecer los criterios de éxito y las métricas de evaluación.
+
+##### Desarrollo Iterativo:
+o	Seguir un enfoque ágil para el desarrollo del sistema, permitiendo iteraciones rápidas y ajustes continuos basados en retroalimentación.
+
+##### Colaboración y Feedback:
+o	Mantener una comunicación constante con las partes interesadas, incluyendo las entidades recaudadoras y expertos en SIG, para asegurar que el sistema desarrollado satisfaga sus necesidades.
+
+##### Monitoreo y Mejora Continua:
+o	Implementar un sistema de monitoreo para evaluar continuamente el rendimiento del sistema en producción.
+
+o	Planificar actualizaciones y mejoras basadas en nuevos datos y tecnologías emergentes.
+
+Este enfoque detallado y estructurado asegura que el proyecto no solo cumpla con los objetivos técnicos, sino que también aporte beneficios tangibles para la gestión urbana y fiscal de la Ciudad de Buenos Aires.
+
+
 ## :black_nib: *Modelo de Referencia CRISP-DM*
 ### 1. Comprensión del Negocio
    >Objetivos y requisitos del Proyecto, definición del problema y plan preliminar diseñado.
