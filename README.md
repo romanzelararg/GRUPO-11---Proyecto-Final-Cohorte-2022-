@@ -236,71 +236,52 @@ Para llevar a cabo el procesamiento de imágenes y el entrenamiento del modelo, 
 
 3.	*Cargar en Google Drive:* Las imágenes satelitales se cargaron de Google Drive para permitir un fácil acceso y manipulación desde cualquier lugar.
 
+#### Identificación de las fuentes de Datos y Proyecciones
 
+El dataset utilizado incluyó evidencia de campo georreferenciada.
+ El mismo consistió en:
+  * Datos georreferenciados: Estos datos, que pueden incluir información sobre la ubicación de las piscinas, se utilizan para entrenar el modelo y evaluar su rendimiento.
 
+#### Análisis exploratorio de los datos
 
+  - *Descarga de Archivos GeoJSON:* Se descarga y se guarda un archivo. geojson (formato de archivo abierto para representar datos geoespaciales simples). Los archivos GeoJSON contienen información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON;
+  - *Configuración de Clases para la Segmentación:* Se define el tamaño de las ventanas de entrenamiento y establece una serie de transformaciones de aumento de datos para mejorar la robustez del modelo de aprendizaje automático. 
 
-Análisis exploratorio de las imágenes satelitales del área de interés. Implica visualizar las imágenes, entender su resolución y otros metadatos.
+#### Identificar las características y la calidad de los datos
 
-:rocket: ***Exploración de herramientas de descarga: Descargas y evaluación de las imágenes***
-  
-:rocket: ***Descarga de imágenes satelitales para entrenamiento: Descarga de imágenes de zonas de interés mediante el Software SAS PLANET***
-  
-:rocket: ***Instalación de librerías de RasterVision***
-  
-:rocket: ***Carga de imágenes satelitales en Drive***
-  
-:rocket: ***Identificar las fuentes de datos y proyecciones: Dataset de evidencia de campo (relevamiento de piscinas) obtenido de la página web del gobierno de la Ciudad de Buenos Aires (https://buenosaires.gob.ar/).***
+Características del Proyecto
+- [x] Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
+- [x] Framework Utilizado: Raster Vision, para el proceso completo de aprendizaje profundo geoespacial.
+- [x] Fuente de Datos: Datos georreferenciados en WGS84 (anotaciones, imágenes y áreas de interés)
+- [x] Aplicación Propuesta: Implementación por entidades recaudadoras para reducir la evasión fiscal y optimizar recursos.
 
-El mismo consistió en:
+#### Calidad y Configuración de Datos
+  - Dataset: Alta resolución, obtenido de una fuente gubernamental confiable.
+  - Preprocesamiento: Uso de GDAL para leer y escribir datos geoespaciales. Esta etapa incluyó la normalización de las imágenes, la eliminación de ruido y la corrección de cualquier distorsión geométrica.
+  - Clases Definidas: Dos clases, 'background' y 'pileta', con sus respectivas transformaciones y visualización.
 
-  - [x] *Datos georreferenciados:* Estos datos, que pueden incluir información sobre la ubicación de las piscinas, se utilizan para entrenar el modelo y evaluar su rendimiento.
-  - [x] *Datos de entrenamiento y validación:* Estos son subconjuntos de los datos georreferenciados que se utilizan específicamente para entrenar el modelo y evaluar su rendimiento durante el proceso de entrenamiento.
+#### Calidad del Código
+  - Estructura: El código está bien organizado, con comentarios explicativos y secciones claramente definidas.
+  - Modelo de Deep Learning: Utilizamos un modelo preentrenado de PyTorch con configuraciones específicas para la tarea.
+  - Visualización: Incluye código para visualizar los resultados de la segmentación semántica.
+  - Entrenamiento del Modelo: Configura y entrena el modelo con un conjunto de datos de entrenamiento y validación.
 
-Si bien no se especifica exactamente de dónde se obtienen estos datos, en proyectos similares, las imágenes satelitales a menudo se obtienen de fuentes como Google Earth, Bing Maps, o servicios de imágenes satelitales como Sentinel o Landsat. Los datos georreferenciados pueden provenir de diversas fuentes, incluyendo bases de datos públicas o privadas, o pueden ser recopilados manualmente.
+#### Posibles Mejoras
+- [x] Validación de Datos: Asegurarse de que las anotaciones y etiquetas sean precisas, posiblemente mediante la validación cruzada y la revisión manual.
+- [x] Optimización de Hiperparámetros: Ajustar los hiperparámetros, como la tasa de aprendizaje, el tamaño del lote y el número de épocas, para mejorar el rendimiento del modelo
+- [x] Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
 
-
-:rocket: ***Realizar un análisis exploratorio de los datos***
-
-   - [x] Se descarga y se guarda un archivo .geojson (formato de archivo abierto para representar datos geoespaciales simples).
-Los archivos GeoJSON contienen información geográfica, como puntos, líneas y polígonos, junto con otros datos en formato JSON;
-   - [x] Se configura las clases para la segmentación, se define el tamaño de las ventanas de entrenamiento y establece una serie de transformaciones de aumento de datos para mejorar la robustez del modelo de aprendizaje automático.
-Las transformaciones de aumento de datos son técnicas comunes para aumentar artificialmente la diversidad de los datos de entrenamiento sin recopilar nuevos datos, lo que puede mejorar la capacidad del modelo para generalizar a nuevas imágenes.
-
-:rocket: ***Identificar las características y la calidad de los datos***
-  
-   Características del Proyecto:
-   - [x] Objetivo: Utilizar el procesamiento de imágenes y machine learning para detectar piletas en imágenes satelitales.
-   - [x] Framework Utilizado: Raster Vision, para el proceso completo de aprendizaje profundo geoespacial.
-   - [x] Fuente de Datos: Imágenes satelitales de la página web del gobierno de la Ciudad de Buenos Aires.
-   - [x] Aplicación Propuesta: Implementación por entidades recaudadoras para reducir la evasión fiscal y optimizar recursos.
-         
-   Calidad y Configuración de Datos:
-   - [x] Dataset: Alta resolución, obtenido de una fuente gubernamental confiable.
-   - [x] Preprocesamiento: Uso de GDAL para leer y escribir datos geoespaciales.
-   - [x] Clases Definidas: Dos clases, 'background' y 'pileta', con sus respectivas transformaciones y visualización.
-         
-   Calidad del Código:
-   - [x] Estructura: El código está bien organizado, con comentarios explicativos y secciones claramente definidas.
-   - [x] Modelo de Deep Learning: Utiliza un modelo preentrenado de PyTorch con configuraciones específicas para la tarea.
-   - [x] Visualización: Incluye código para visualizar los resultados de la segmentación semántica.
-   - [x] Entrenamiento del Modelo: Configura y entrena el modelo con un conjunto de datos de entrenamiento y validación.
-         
-   Posibles Mejoras:
-   - [x] Validación de Datos: Asegurarse de que las anotaciones y etiquetas sean precisas.
-   - [x] Optimización de Hiperparámetros: Ajustar los hiperparámetros para mejorar el rendimiento del modelo.
-   - [x] Evaluación Rigurosa: Implementar métricas de evaluación para medir la precisión y el recall del modelo.
-
-:rocket: ***Definir las clases para la segmentación***
-
+#### Definir las clases para la segmentación
 En el contexto de la segmentación semántica en deep learning, las "clases" se refieren a las categorías de objetos que el modelo está diseñado para reconocer en las imágenes. Cada píxel en la imagen se clasifica en una de las clases posibles.
 
 En el colab ISPC_Piletas_Entrenamiento.ipynb`, las clases para la segmentación probablemente serían al menos dos: 'pileta' (piscina) y 'background' (fondo). Esto significa que el modelo está entrenado para reconocer y diferenciar entre estas dos categorías en las imágenes satelitales.
 
-   - [x] La clase 'pileta' correspondería a los píxeles que representan piscinas en las imágenes.
-   - [x] La clase 'background' correspondería a todos los demás píxeles que no representan piscinas.
-         
-Estas clases permiten al modelo aprender a distinguir entre las características visuales de las piscinas y el resto de la imagen. Una vez entrenado, el modelo puede aplicarse a nuevas imágenes para identificar y segmentar las piscinas.
+  - [x] La clase 'pileta' correspondería a los píxeles que representan piscinas en las imágenes.
+  - [x] La clase 'background' correspondería a todos los demás píxeles que no representan piscinas.
+        
+Estas clases permiten al modelo aprender a distinguir entre las características visuales de las piscinas y el resto de la imagen. Una vez entrenado, el modelo puede aplicarse a nuevas imágenes para identificar y segmentar las piscinas de manera efectiva.
+
+
 
 ### 3. Preparación de los Datos
    >Seleccion de tablas, registros y atributos, transformación y limpieza de datos.
@@ -411,7 +392,104 @@ Para una evaluación exhaustiva del modelo, utilizamos varias métricas de evalu
 
 :microscope: ***Evaluación para la Clase “Background”***
 
-Analizamos los resultados de evaluación para la clase ID O, que corresponde a la clase
+Analizamos los resultados de evaluación para la clase ID O, que corresponde a la clase.
+
+Aquí están los detalles:
+
+***1.	Matriz de Confusión:***
+  - Verdaderos Positivos (TP): 103,510,288.0
+  - Falsos Positivos (FP): 93,874.0
+  - Verdaderos Negativos (TN): 364.0
+  - Falsos Negativos (FN): 0.0
+
+***2.	Métricas de Evaluación:***
+   
+•	Precisión: 0.9991
+
+    - La precisión mide la proporción de predicciones positivas correctas (TP) respecto al total de predicciones positivas (TP +FP). En este caso, es alta lo que indica que el modelo tiene pocas falsas alarmas.
+  	
+•	Recall (Sensibilidad):1.0
+
+    - El Recall mide la proporción de verdaderos positivos (TP) respecto al total de instancias de fondo de imagen. Un valor de 1.0 significa que el modelo detecta todas las instancias de fondo.
+    
+•	F1-score:0.9995
+
+    - El F1-score es la media armónica entre precisión y recall. Es útil para encontrar un equilibrio entre ambas métricas.
+    
+•	Especificidad: 0.0039
+
+    - La especificidad mide la proporción de verdaderos negativos (TN) respecto al total de instancias de fondo que no son positivas (TN +FP). Un valor bajo indica que el modelo tiene dificultades para detectar instancias de fondo.
+
+•	Error de conteo:
+
+    - El error de conteo (count_error) es igual a la cantidad de falsos positivos (FP), que en este caso es 93.874.
+
+•	Conteo Total:
+
+    - El conteo total de instancia de fondo en la imagen (gt_count) es 103,510,288.
+
+•	Predicciones Realizadas:
+
+    - El conteo total de predicciones realizadas por el modelo(pred_count) es 103,604,162.
+
+•	Frecuencia Relativa:
+
+    - La frecuencia relativa de la clase de fondo en la imagen es 0.9991.
+
+En resumen, el modelo tiene un alto rendimiento en la detección de la clase de fondo (“background”) , con una precisión cercana al 99.91% y un recall del 100%. Sin embargo, la especificidad es baja, lo que indica que el modelo tiene dificultades para identificar instancias de fondo que no son positivas.
+
+### Evaluación para la Clase “Pileta” (Piscina)
+
+Analizamos los resultados de evaluación para la clase con ID 1, que corresponde a la clase “pileta”. Aquí los detalles:
+
+***1.	Información de la clase:***
+•	ID de Clase:1
+•	Nombre de la Clase: “pileta” (o piscina)
+
+***2.	Matriz de Confusión:***
+•	Verdaderos Negativos (TN): 103,510,288.0
+•	Falsos Negativos (FN): 93,874.0
+•	Verdaderos Positivos (TP): 364.0
+•	Falsos Positivos (FP):0.0
+
+
+***3.	Métricas de Evaluación:***
+   
+•	Precision:100%
+
+    - Todas las predicciones positivas son correctas
+    
+•	Recall (Sensibilidad):0.39%
+
+    - El modelo tiene dificultades para identificar correctamente las piscinas
+    
+•	F-score:0.77
+
+    - Este valor se debe al bajo recall
+    
+•	Especificidad:100%
+
+    - El modelo identifica correctamente las instancias negativas
+    
+•	Error de conteo:
+
+    - El error de conteo (falsos negativos) es 93,874
+    
+•	Frecuencia Relativa:
+
+    - La clase pileta representa aproximadamente el 0.09% de las instancias de la imagen.
+    
+En resumen, aunque la precisión es alta, el recall(sensibilidad) es muy bajo (0.39%).
+
+Esto sugiere que el modelo tiene dificultades para identificar correctamente las piscinas en las imágenes. El F1-score también es bajo debido al bajo recall. 
+
+### Interpretación de los resultados
+
+•	***Clase “background” (fondo):***
+La precisión es alta, esto significa que la mayoría de las predicciones positivas son correctas y hay pocas falsas alarmas. El recall es del 100%, el modelo detecta todas las instancias de fondo de imagen. El F1-score es alto, esta métrica combina precisión y recall y en este caso muestra un buen equilibrio. La especificidad es baja, el modelo tiene dificultades para identificar las instancias de fondo que no son positivas. El error de conteo (falsos positivos) es de 93.87 y la frecuencia relativa, la clase de fondo representa el 99.91% de las instancias en la imagen.
+
+•	***Clase “pileta” (Piscina):***
+La precisión es del 100%, todas las predicciones son correctas. El recall es muy bajo, el modelo tiene dificultades para identificar correctamente las piscinas, el F1-score también es bajo, esto se debe al bajo recall. La especificidad es alta, el modelo identifica correctamente las instancias negativas. El error de conteo (falsos negativos) es de 93.874, y la clase pileta representa aproximadamente el 0.09% de las instancias en la imagen.
 
 
 ### 6. Despliegue
