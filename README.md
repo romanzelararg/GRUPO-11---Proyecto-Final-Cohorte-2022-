@@ -155,9 +155,9 @@ El problema a resolver es la detección automatizada de piscinas en imágenes sa
 :pushpin: ***Desarrollo del Sistema Automatizado***
 
 * Imágenes Satelitales de Alta Resolución
-  El sistema utiliza imágenes satelitales de alta resolución para identificar posibles piscinas. La calidad y resolución de estas imágenes son esenciales para la precisión modelo. Las imágenes deben capturar detalles finos y permitir una clara distinción de las características de las piscinas .
+  - El sistema utiliza imágenes satelitales de alta resolución para identificar posibles piscinas. La calidad y resolución de estas imágenes son esenciales para la precisión modelo. Las imágenes deben capturar detalles finos y permitir una clara distinción de las características de las piscinas .
 * Algoritmo de Aprendizaje Profundo
-Se entrenan algoritmos de aprendizaje profundo, específicamente diseñados para recorrer formas y reflejos de agua en las imágenes satelitales. Estos algoritmos deben manejar la variabilidad en las condiciones de iluminación y los diferentes tipos de piscinas. El entrenamiento incluirá técnicas de argumentación de datos para mejorar la robustez del modelo frente a diferentes condiciones ambientales y variaciones estacionales.
+  - Se entrenan algoritmos de aprendizaje profundo, específicamente diseñados para recorrer formas y reflejos de agua en las imágenes satelitales. Estos algoritmos deben manejar la variabilidad en las condiciones de iluminación y los diferentes tipos de piscinas. El entrenamiento incluirá técnicas de argumentación de datos para mejorar la robustez del modelo frente a diferentes condiciones ambientales y variaciones estacionales.
 
 :pushpin: ***Identificación de las partes interesadas y sus necesidades***
 
@@ -199,7 +199,46 @@ Optimización de recursos: El sistema propuesto podría optimizar los recursos u
 * Cambios ambientales: Las condiciones ambientales y cambios estacionales pueden afectar la visibilidad de las piscinas en las imágenes satelitales, lo que podría complicar la detección.
       
 ### 2. Comprensión de los Datos
-   >Recopilación , primeros conocimientos de los datos
+#### Recopilación , primeros conocimientos de los datos
+
+El primer paso en la fase de comprensión de los datos del modelo CRISP-DM implica la identificación y adquisición de las fuentes de datos relevantes. Este proceso es fundamental para asegurar que se cuenta con la información adecuada para abordar el problema planteado.
+1.	Identificación de Fuentes de Datos:
+   * Imágenes satelitales: Para este proyecto, las imágenes satelitales fueron descargadas mediante el software SAS-PLANET.
+   * Datos Georreferenciados: Se obtuvieron datos sobre la ubicación de las piscinas 
+de un relevamiento de la Gerencia de Generación de datos del GCBA. https://buenosaires.gob.ar/antropologia-urbana/herramientas-para-la-generacion-de-datos-territoriales
+
+2. Análisis Exploratorios de las Imágenes Satelitales:
+   * Visualización de Imágenes: Se realiza una visualización inicial de las imágenes satelitales para comprender mejor su contenido y características visuales.
+   * Resolución y Metadatos: Es esencial entender la resolución espacial de las imágenes, que determina el nivel de detalle que se puede observar. Además, se revisan los metadatos para obtener información adicional.
+  
+#### Exploración de Herramientas de Descarga
+
+Para la obtención de imágenes satelitales se exploran diversas herramientas de descarga. La elección de la herramienta adecuada para afectar significativamente la calidad y usabilidad de las imágenes obtenidas.
+
+* Descarga y Evaluación de Imágenes:
+  - SAS PLANET: Esta herramienta se utilizó para descargar imágenes satelitales de alta resolución de áreas específicas de interés. SAS PLANET permite la descarga de datos desde múltiples servicios de mapas.
+
+#### Descarga de Imágenes Satelitales para Entrenamiento
+
+El proceso de descarga de imágenes satelitales para el entrenamiento del modelo incluye:
+
+* Selección de Zonas de Interés: Se identificaron y seleccionaron áreas específicas dentro de la Ciudad de Buenos Aires que contienen piscinas para asegurar la relevancia de los datos.
+
+* Descarga y Almacenamiento: Utilizando SAS PLANET, se descargaron las imágenes seleccionadas y se almacenaron en Google Drive para facilitar el acceso y la manipulación durante el desarrollo del proyecto.
+
+#### Instalación de Librerías y Configuración del Entorno
+
+Para llevar a cabo el procesamiento de imágenes y el entrenamiento del modelo, se instaló un conjunto de librerías esenciales:
+
+1.	*Raster Visión:* esta herramienta se utilizó para el proceso completo de aprendizaje profundo geoespacial, incluyendo la segmentación de imágenes.
+
+2.	*GDAL (Geospatial Data Abstraction Library):* GDAL se empleó para leer y escribir datos geoespaciales, facilitando el procesamiento de imágenes.
+
+3.	*Cargar en Google Drive:* Las imágenes satelitales se cargaron de Google Drive para permitir un fácil acceso y manipulación desde cualquier lugar.
+
+
+
+
 
 Análisis exploratorio de las imágenes satelitales del área de interés. Implica visualizar las imágenes, entender su resolución y otros metadatos.
 
