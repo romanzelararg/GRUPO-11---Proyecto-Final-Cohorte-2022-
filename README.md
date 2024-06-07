@@ -281,6 +281,7 @@ En el colab ISPC_Piletas_Entrenamiento.ipynb`, las clases para la segmentación 
         
 Estas clases permiten al modelo aprender a distinguir entre las características visuales de las piscinas y el resto de la imagen. Una vez entrenado, el modelo puede aplicarse a nuevas imágenes para identificar y segmentar las piscinas de manera efectiva.
 
+![image](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/assets/108492765/6f023a97-8d5b-4d35-a270-c9b749bfe4eb)
 
 
 ### 3. Preparación de los Datos
@@ -515,7 +516,34 @@ Algunas recomendaciones que pueden ayudar a optimizar impacto y utilidad de ést
 
   3. *Mejora Continua y Actualizaciones:* Implementar un sistema de monitoreo para evaluar continuamente el rendimiento del sistema en producción. Planificar actualizaciones y mejoras basadas en nuevos datos y tecnologías emergentes.
 
-  4. *Documentación y Capacitación:* Continuar documentando detalladamente el proceso de desarrollo, incluyendo la recolección de datos, el entrenamiento del modelo y la integración del sistema. Además, capacitar al personal de las entidades recaudadoras en el uso del sistema y la interpretación de los resultados.
+4. *Documentación y Capacitación:* Continuar documentando detalladamente el proceso de desarrollo, incluyendo la recolección de datos, el entrenamiento del modelo y la integración del sistema. Además, capacitar al personal de las entidades recaudadoras en el uso del sistema y la interpretación de los resultados.
+
+
+
+## LISTADO DE ALGORITMOS, FRAMEWORKS Y HERRAMIENTAS PRE ENTRENADAS UTILIZADOS EN EL PROYECTO
+
+	El proyecto de detección de piletas mediante imágenes satelitales utiliza varios algoritmos y técnicas para lograr su objetivo. A continuación, se presentan algunos de los más relevantes:
+ 
+1. Redes Neuronales Convolucionales (CNN):
+   
+   - Estas redes son fundamentales para el aprendizaje profundo en visión por computadora. Se entrenaron para reconocer patrones y características en imágenes, como formas y texturas. En este proyecto, se utilizan para identificar piscinas en las imágenes satelitales.
+     
+2. Segmentación Semántica:
+   
+   - La segmentación semántica es una técnica que asigna una etiqueta a cada píxel de una imagen. En este caso, se utiliza para distinguir las áreas de las piscinas de otras superficies en las imágenes.
+     
+3. Raster Vision:
+   
+   - Raster Vision es un framework que nos permitió el procesamiento de datos georreferenciados. Facilitó la lectura de imágenes satelitales, el entrenamiento de modelos y la escritura de predicciones en formatos georreferenciados.
+     
+4. GDAL (Geospatial Data Abstraction Library):
+   
+   - GDAL es una biblioteca que se utiliza para manejar datos raster y vectoriales. En este proyecto, se emplea para la manipulación y preparación de datos geoespaciales.
+     
+5. Técnicas de Argumentación de Datos:
+   
+   - Para mejorar la robustez del modelo, se aplicaron técnicas de argumentación de datos, como la rotación, el cambio de brillo y la ampliación/reducción de imágenes.
+
 
     
 
