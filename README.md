@@ -354,6 +354,10 @@ El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos 
    - [x] Se inicia el entrenamiento del modelo con los conjuntos de datos preparados.
    - [x] Se realizan iteraciones (epoch) donde el modelo aprende a identificar piletas en las imágenes.
 
+![image](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/assets/108492765/f52f8015-c50b-4c33-ae7f-72ca0bb39b87)
+
+Este tipo de visualización es útil para analizar las áreas de una imagen donde el modelo tiene una alta confianza en sus predicciones para cada clase. Permite a los usuarios o analistas entender mejor cómo el modelo está interpretando diferentes partes de la imagen.
+
 :pencil: ***Monitorear el rendimiento del modelo durante el entrenamiento***
 
 * Visualización: Se utiliza <sup>SemanticSegmentationVisualizer</sup> para visualizar las predicciones del modelo y las etiquetas reales, lo que ayuda a monitorear cómo el modelo está aprendiendo.
@@ -361,6 +365,10 @@ El modelo se entrena utilizando los datos de entrenamiento, ajustando los pesos 
 * Registro de Estadísticas: Se registran estadísticas de los datos para asegurarse de que el entrenamiento se base en datos sólidos y bien informados.
   
 * Guardado del Modelo: Una vez completado el entrenamiento, se guarda el modelo y su configuración para su uso futuro.
+
+![image](https://github.com/romanzelararg/GRUPO-11---Proyecto-Final-Cohorte-2022-/assets/108492765/55cc9bd2-9b92-4e0b-aa04-c656d967b025)
+
+Este tipo de visualización es útil para examinar en detalle las áreas donde el modelo ha predicho la presencia de ‘piletas’ con una cierta confianza, representada por las puntuaciones en el arreglo scores.
 
 
 ### 5. Evaluación
